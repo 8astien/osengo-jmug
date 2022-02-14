@@ -10,78 +10,138 @@
 </head>
 <body>
     <header>
-
-        <nav>
-
-        </nav>
+        <img src="./assets/logo.png" alt="Logo JMug" class="logo">
+        <h1>Administration JMug</h1>
+        <a class="header__viewstore" href="#"><i class="fas fa-eye"></i>Voir boutique</a>
     </header>
+
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Tableau de bord
+                </a>
+            </li>
+            <li>
+                <a href="customers.html">
+                    <i class="fas fa-user"></i>
+                    Clients
+                </a>
+            </li>
+            <li>
+                <a href="orders.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    Commandes
+                </a>
+            </li>
+            <li>
+                <a href="products.html">
+                    <i class="fas fa-dolly-flatbed"></i>
+                    Produits
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cogs"></i>
+                    Paramètres
+                </a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <!-- YOUR CODE HERE -->
-        <div class="table">
-            <ul class="table-head">
-                <li>Id</li>
-                <li>Cantite</li>
-                <li>Date Commandes</li>
-                <li>Date d'envoi</li>
-                <li>Ref. Item</li>
-                <li>Prix</li>
-                <li>Etat</li>
-                <li>Modifier</li>
-            </ul>
-            <ul class="table-body">
-                <li><input type="checkbox"  id="checkbox" ></li>
-                <li>0526</li>
-                <li> <input type="number" id="box-number" placeholder="8"></li>
-                <li>22/02/2022</li>
-                <li>23/02/2022</li>
-                <li>La tase P</li>
-                <li>46.00£</li>
-                <li>En Cours Livraison</li>
-            </ul>
-            <ul class="table-body">
-                <li><input type="checkbox"  id="checkbox" ></li>
-                <li>0526</li>
-                <li> <input type="number" id="box-number" placeholder="8"></li>
-                <li>22/02/2022</li>
-                <li>23/02/2022</li>
-                <li>La tase P</li>
-                <li>46.00£</li>
-                <li>En Cours Livraison</li>
-            </ul><ul class="table-body">
-                <li><input type="checkbox"  id="checkbox" ></li>
-                <li>0526</li>
-                <li> <input type="number" id="box-number" placeholder="8"></li>
-                <li>22/02/2022</li>
-                <li>23/02/2022</li>
-                <li>La tase P</li>
-                <li>46.00£</li>
-                <li>En Cours Livraison</li>
-            </ul><ul class="table-body">
-                <li><input type="checkbox"  id="checkbox" ></li>
-                <li>0526</li>
-                <li> <input type="number" id="box-number" placeholder="8"></li>
-                <li>22/02/2022</li>
-                <li>23/02/2022</li>
-                <li>La tase P</li>
-                <li>46.00£</li>
-                <li>En Cours Livraison</li>
-            </ul><ul class="table-body">
-                <li><input type="checkbox"  id="checkbox" ></li>
-                <li>0526</li>
-                <li> <input type="number" id="box-number" placeholder="8"></li>
-                <li>22/02/2022</li>
-                <li>23/02/2022</li>
-                <li>La tase P</li>
-                <li>46.00£</li>
-                <li>En Cours Livraison</li>
-            </ul>
+        
+      <div class="filtre-categorie">
+        <h2>Commandes</h2>
+        <input
+          id="searchbar"
+          type="text"
+          name="search"
+          placeholder="Filtrer par catégories"
+        />
+        <a href="#">
+          <input id="validbutton" type="button" value="Nouveau Produit" />
+        </a>
+      </div>
+        
+        
+        <section class="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Cantite</th>
+                        <th>Date Commandes</th>
+                        <th>Date d'envoi</th>
+                        <th>Ref. Item</th>
+                        <th>Prix</th>
+                        <th>Etat</th>
+                        <th>Modifier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>2506</td>
+                        <td><input type="number" class="box-number" placeholder="8" ></td>
+                        <td>05/02/2022</td>
+                        <td>07/02/2022</td>
+                        <td>La tase P</td>
+                        <td>368.00£</td>
+                        <td>En Cours</td>
+                        <td>none</td>
+                    </tr>
+                    <tr>
+                        <td>2006</td>
+                        <td><input type="number" class="box-number" placeholder="14" ></td>
+                        <td>17/01/2022</td>
+                        <td>18/01/2022</td>
+                        <td>La tase P</td>
+                        <td>644.00£</td>
+                        <td>En Cours</td>
+                        <td>none</td>
+                    </tr>
+                     <tr>
+                        <td>1564</td>
+                        <td><input type="number" class="box-number" placeholder="7" ></td>
+                        <td>10/01/2022</td>
+                        <td>11/01/2022</td>
+                        <td>La tase P</td>
+                        <td>322.00£</td>
+                        <td>En Cours</td>
+                        <td>none</td>
+                    </tr> 
+                    <tr>
+                        <td>1485</td>
+                        <td><input type="number" class="box-number" placeholder="1" ></td>
+                        <td>05/01/2022</td>
+                        <td>07/01/2022</td>
+                        <td>La tase P</td>
+                        <td>46.00£</td>
+                        <td>En Cours</td>
+                        <td>none</td>
+                    </tr> 
+                    <tr>
+                        <td>1456</td>
+                        <td><input type="number" class="box-number" placeholder="22" ></td>
+                        <td>03/01/2022</td>
+                        <td>04/01/2022</td>
+                        <td>La tase P</td>
+                        <td>1102.00£</td>
+                        <td>En Cours</td>
+                        <td>none</td>
+                    </tr>
+        
+                </tbody>
+            
+            </table>
        
-       
+        </section>
         
     </main>
    
 
-    </div>
+
     
 </body>
 </html>
