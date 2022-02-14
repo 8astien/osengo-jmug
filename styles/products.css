@@ -73,4 +73,17 @@ table {
 
   h2 {
       font-family: Rowdies;
+      margin:1rem 0 0 1rem;
+
+  }
+
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  table {
+    margin-top: 50px;
   }
