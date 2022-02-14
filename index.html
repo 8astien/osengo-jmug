@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Panneau Administration JMug</title>
     <script src="https://kit.fontawesome.com/9ac44fc111.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/dashboard.css">
 </head>
+
 <body>
     <header>
         <img src="./assets/logo.png" alt="Logo JMug" class="logo">
@@ -56,12 +58,116 @@
     </nav>
     <main>
         <!-- YOUR CODE HERE -->
+        <h2 class="content__title">Tableau de bord</h2>
+        <p class="content__range">Statistiques sur :</p>
+        <div class="content__range">
+            <button>
+                Jour
+            </button>
+            <button>
+                Mois
+            </button>
+            <button>
+                Année
+            </button>
+        </div>
+        <div class="grid__wrapper">
+            <article>
+                <div class="grid__title">
+                    VISITEURS :
+                </div>
+                <div class="grid__one--one">
+                    Nombre de visites
+                </div>
+                <div class="grid__one--two">
+                    Volume de commandes
+                </div>
+                <div class="grid__one--three">
+                    Taux de transformation
+                </div>
+                <div class="grid__one--four">
+                    Paniers abandonnés
+                </div>
+                <div class="grid__two--one">
+                    4200
+                </div>
+                <div class="grid__two--two">
+                    1254
+                </div>
+                <div class="grid__two--three">
+                    29.85%
+                </div>
+                <div class="grid__two--four">
+                    802
+                </div>
+            </article>
+            <article>
+                <div class="grid__title">
+                    VISITES :
+                </div>
+                <div class="grid__one--one">
+                    Nombre total de visites
+                </div>
+                <div class="grid__one--two">
+                    Visiteurs uniques
+                </div>
+                <div class="grid__one--three">
+                    Déjà client
+                </div>
+                <div class="grid__one--four">
+                    Nouveau client
+                </div>
+                <div class="grid__two--one">
+                    5800
+                </div>
+                <div class="grid__two--two">
+                    4200
+                </div>
+                <div class="grid__two--three">
+                    2100(50%)
+                </div>
+                <div class="grid__two--four">
+                    2100(50%)
+                </div>
+            </article>
+            <article>
+                <div class="grid__title">
+                    CHIFFRE D'AFFAIRES :
+                </div>
+                <div class="grid__one--one">
+                    CA total
+                </div>
+                <div class="grid__one--two">
+                    Nombre de commandes
+                </div>
+                <div class="grid__one--three">
+                    Panier moyen
+                </div>
+                <div class="grid__one--four">
+                    Bénéfice net
+                </div>
+                <div class="grid__two--one">
+                    87 000€
+                </div>
+                <div class="grid__two--two">
+                    1254
+                </div>
+                <div class="grid__two--three">
+                    69.37€
+                </div>
+                <div class="grid__two--four">
+                    53 000€
+                </div>
+            </article>
+        </div>
 
-       
-       
-        
+        <section class="content__discounts">
             
-        
+        </section>
+
+
+
     </main>
 </body>
+
 </html>

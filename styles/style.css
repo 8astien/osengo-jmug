@@ -18,7 +18,6 @@ nav {
 }
 
 main {
-    margin-left: 100px;
     margin-left: 150px;
     padding-top: 100px;
 }
@@ -44,12 +43,15 @@ main {
 }
 
 .navbar > li {
-    max-width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     list-style: none;
-    margin-top: 2rem;
-    margin-left: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    padding: 0.5rem;
+    transition: all 100ms ease-in-out;
 }
 
 .navbar > li > a {
@@ -66,7 +68,11 @@ table {
 
 /********* ANIMATIONS AND EFFECTS ***********/
 
-.navbar > li > a:hover {
+.navbar > li:hover {
+    background-color: #5784BA;
+}
+
+.navbar > li:hover a {
     color: white;
 }
 
