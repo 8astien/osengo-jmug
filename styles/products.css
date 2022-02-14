@@ -31,7 +31,7 @@ table {
   th {
     position: sticky;
     top: 0;
-    background: #6c7ae0;
+    background: #5784BA;
     text-align: left;
     font-weight: normal;
     font-size: 1.1rem;
@@ -49,7 +49,7 @@ table {
   }
   
   tr:nth-child(even) td {
-    background: #f8f6ff;
+    background: rgba(244, 207, 223, 0.3);
   }
 
   #validbutton {
@@ -86,4 +86,12 @@ table {
 
   table {
     margin-top: 50px;
+  }
+  
+  .instock {
+    color: green;
+  }
+
+  .nostock {
+    color: red;
   }
