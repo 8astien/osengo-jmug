@@ -14,12 +14,8 @@ nav {
     position: fixed;
     height: 100%;
     width: 150px;
-<<<<<<< HEAD
     margin-top: 100px;
     
-=======
-    margin-top: 100px;  
->>>>>>> 1f83a638ab759288e2fb00543bcd636f481ca16d
 }
 
 main {
@@ -48,11 +44,7 @@ main {
 }
 
 .navbar > li {
-<<<<<<< HEAD
     max-width: 100%;
-=======
-    min-width: 100%;
->>>>>>> 1f83a638ab759288e2fb00543bcd636f481ca16d
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -81,14 +73,4 @@ table {
     background-color: #5784BA;
 }
 
-<<<<<<< HEAD
 /********* ANIMATIONS AND EFFECTS ***********/
-=======
-.navbar > li:hover a {
-    color: white;
-}
-
-.header__viewstore:hover {
-    color: white;
-}
->>>>>>> 1f83a638ab759288e2fb00543bcd636f481ca16d
