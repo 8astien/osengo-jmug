@@ -1,8 +1,22 @@
+h2 {
+  padding: 1%;
+  text-align: center;
+}
+
+p {
+  padding: 0.5%;
+  text-align: center;
+}
+
+span {
+  margin-left: 0.5%;
+}
 
 table {
   display: grid;
   border-collapse: collapse;
   min-width: 100%;
+  margin-top: 5%;
   grid-template-columns: 
     minmax(150px, 1fr)
     minmax(150px, 1.67fr)
@@ -48,5 +62,5 @@ td {
 }
 
 tr:nth-child(even) td {
-  background: #f8f6ff;
+  background: rgba(244, 207, 223, 0.3);
 }
