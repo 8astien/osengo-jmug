@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -54,6 +57,7 @@
             </li>
         </ul>
     </nav>
+
     <main>
         <div class="title">
             <h2>Paramètres</h2>
@@ -88,70 +92,75 @@
             </div>
         </div>
         <nav id="nav-settings">
-                <a href="settings.html">Paramètres généraux</a>
-                <a href="maintenance.html">Maintenance</a>
-                <div class="animation start-settings"></div>
+
+            <!-- <ul id="nav-items"> -->
+            <a href="settings.html">Paramètres généraux</a>
+            <a href="maintenance.html">Maintenance</a>
+            <div class="animation start-maintenance"></div>
+            <!-- </ul> -->
         </nav>
-        <form id="general-settings">
+        <form id="maintenance-settings">
 
             <div class="items_toggle">
-                <span>Changer le nom de la boutique</span>
+                <span>Mode maintenance</span>
                 <label class="switch">
-                    <input id="shop-name-toggle"  type="checkbox">
+                    <input id="maitenance-toggle" type="checkbox">
                     <span class="slider round"></span>
                 </label>
-            </div>
-            <div class="items_toggle">
-
-                <span>Disponible à l'étranger</span>
-                <label class="switch">
-                    <input id="abroad-toggle"  type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-            <div class="items_toggle">
-
-                <span>Afficher les attributs dans la balise titre du produits</span>
-                <label class="switch">
-                    <input id="display-attributs-toggle"  type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
-            <div class="items_toggle">
-
-                <span>Vider le cache</span>
-                <label class="switch">
-                    <input id="empty-cache-toggle"  type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-            </div>
             </div>
             <div class="items">
-                <label for="currency-select">Disponible à l'étranger</label>
-                <select name="currency" id="currency-select">
-                    <option value="eur">EUR - Euro</option>
-                    <option value="usd">USD - Dollar</option>
-                    <option value="gbp">GBP - Pound</option>
-                    <option value="jpy">JPY - Yen</option>
-                    <option value="cad">CAD - Dollar</option>
-                </select>
+                <label for="maintenance-msg">Message de maintenance</label>
+                <textarea name="maintenance-msg" id="" cols="20" rows="4">Error 503</textarea>
             </div>
-            <div class="items">
-                <label for="activity">Activité principale:</label>
-                <div>
-                    <input type="text" id="activity" name="activity" placeholder="4791A" minlength="4" maxlength="8"
-                        size="7"><i class="fa-solid fa-pen"></i>
-                </div>
-            </div>
-            <div class="items">
-                <label for="email-contact">Adresse de contact</label>
-                <div>
-                    <input type="text" id="email-contact" name="email-contact" placeholder="Pj-contact@pj.com"
-                        minlength="4" maxlength="8" size="20"><i class="fa-solid fa-pen"></i>
-                </div>
+              <div class="items">
+                <label for="maintenance-msg">IP Whitelist</label>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>IP</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>87.162.95.123</td>
+                            <td>Colombia</td>
+                        </tr>
+                        <tr>
+                            <td>119.14.107.232</td>
+                            <td>Slovakia</td>
+                        </tr>
+                        <tr>
+                            <td>83.113.172.249</td>
+                            <td>Maldives</td>
+                        </tr>
+                        <tr>
+                            <td>175.103.222.107</td>
+                            <td>Marshall Islands</td>
+                        </tr>
+                        <tr>
+                            <td>0.33.84.48</td>
+                            <td>Micronesia</td>
+                        </tr>
+
+                    </tbody>
+                </table>
             </div>
         </form>
+        <!-- YOUR CODE HERE -->
     </main>
+    <script>
+        document.querySelectorAll('*').forEach(el => {
+            if (el.offsetWidth > document.documentElement.offsetWidth) {
+                console.log('Found the worst element ever: ', el);
+            }
+        });
+        document.querySelectorAll('*').forEach(el => {
+            if (el.offsetWidth > document.documentElement.offsetHeight) {
+                console.log('Found the worst element ever: ', el);
+            }
+        });
+    </script>
 </body>
 
 </html>

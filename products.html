@@ -56,17 +56,17 @@
 
     <main>
       <h2>Produits</h2>
-      <div>
+       <div class="inputs">
         <input
-          id="searchbar"
-          type="text"
-          name="search"
-          placeholder="Filtrer par catégories"
-        />
-        <a href="#">
-          <input id="validbutton" type="button" value="Nouveau Produit" />
-        </a>
-      </div>
+        id="searchbar"
+        type="text"
+        name="search"
+        placeholder="Filtrer par catégories"
+      />
+      <a href="#">
+        <input id="validbutton" type="button" value="Nouveau Produit" />
+      </a>
+       </div> 
         <section>
             <table>
                 <thead>
@@ -88,7 +88,7 @@
                         <td>La tasse P</td>
                         <td>JJJJ</td>
                         <td>46.00€</td>
-                        <td><i class="fa-solid fa-circle-check"></i></td>
+                        <td><i class="fa-solid fa-circle-check instock"></i></td>
                         <td>10</td>
                         <td><i class="fa-solid fa-pen"></i></td>
                     </tr>
@@ -98,7 +98,7 @@
                         <td>St-Valentin</td>
                         <td>AAAA</td>
                         <td>15.00€</td>
-                        <td><i class="fa-solid fa-circle-check"></i></td>
+                        <td><i class="fa-solid fa-circle-check instock"></i></td>
                         <td>3</td>
                         <td><i class="fa-solid fa-pen"></i></td>
                     </tr>
@@ -108,7 +108,7 @@
                         <td>Le Trop Cher</td>
                         <td>BBBB</td>
                         <td>234.00€</td>
-                        <td><i class="fa-solid fa-circle-check"></i></td>
+                        <td><i class="fa-solid fa-circle-check instock"></i></td>
                         <td>1</td>
                         <td><i class="fa-solid fa-pen"></i></td>
                     </tr>
@@ -118,7 +118,7 @@
                         <td>Royal Mug</td>
                         <td>UUUU</td>
                         <td>12.00€</td>
-                        <td><i class="fa-solid fa-circle-xmark"></i></td>
+                        <td><i class="fa-solid fa-circle-xmark nostock"></i></td>
                         <td>0</td>
                         <td><i class="fa-solid fa-pen"></i></td>
                     </tr>
@@ -128,8 +128,18 @@
                         <td>LeJCestleS</td>
                         <td>ZZZZ</td>
                         <td>8.00€</td>
-                        <td><i class="fa-solid fa-circle-xmark"></i></td>
+                        <td><i class="fa-solid fa-circle-xmark nostock"></i></td>
                         <td>0</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>####</td>
+                        <td><i class="fa-solid fa-image"></i></td>
+                        <td>Thanos</td>
+                        <td>RRRR</td>
+                        <td>6 pierres</td>
+                        <td><i class="fa-solid fa-circle-check instock"></i></td>
+                        <td>1</td>
                         <td><i class="fa-solid fa-pen"></i></td>
                     </tr>
                 </tbody>
