@@ -15,6 +15,10 @@ nav {
     height: 100%;
     width: 150px;
     margin-top: 100px;
+<<<<<<< HEAD
+=======
+    
+>>>>>>> dc487d375ba274b95b944b8135cac19b2f75e1a8
 }
 
 main {
@@ -72,6 +76,7 @@ table {
     background-color: #5784BA;
 }
 
+<<<<<<< HEAD
 .navbar > li:hover a {
     color: white;
 }
@@ -79,3 +84,6 @@ table {
 .header__viewstore:hover {
     color: white;
 }
+=======
+/********* ANIMATIONS AND EFFECTS ***********/
+>>>>>>> dc487d375ba274b95b944b8135cac19b2f75e1a8
