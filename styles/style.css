@@ -19,6 +19,7 @@ nav {
 }
 
 main {
+    margin-left: 100px;
     margin-left: 150px;
     padding-top: 100px;
 }
@@ -54,5 +55,3 @@ main {
     text-decoration: none;
     color: black;
 }
-
-/********* ANIMATIONS AND EFFECTS ***********/
