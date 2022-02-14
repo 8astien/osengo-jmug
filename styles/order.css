@@ -11,6 +11,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: black;
 }
 
 nav {
@@ -19,6 +20,10 @@ nav {
     height: 100%;
     width: 150px;
     margin-top: 100px;
+}
+main {
+    margin-left: 150px;
+    padding-top: 100px;
 }
 .logo {
     width: 100px;
@@ -29,31 +34,46 @@ nav {
     margin: 1rem;
     text-decoration: none;
     color: black;
+    transition: all 100ms ease-in-out;
 }
 .navbar {
     margin: 0;
     padding: 0;
-    height: 50vh;
     display: flex;
     flex-direction: column;
 }
 .navbar > li {
-    width: 100%;
+    min-width: 100%;
     display: flex;
     flex-direction: column;
     list-style: none;
     margin-top: 1rem;
-    margin-left: 10px;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    padding: 0.5rem;
+    transition: all 100ms ease-in-out;
 }
 
 .navbar > li > a {
     text-decoration: none;
     color: black;
+    transition: all 100ms ease-in-out;
 }
 
-main {
-    margin-left: 150px;
-    padding-top: 100px;
+
+
+/*************animations and effects**************/
+
+.navbar > li:hover {
+    background-color: #5784BA;
+}
+
+.navbar > li:hover a {
+    color: white;
+}
+
+.header__viewstore:hover {
+    color: white;
 }
 
 /*//////Table/////////*/
@@ -172,5 +192,7 @@ ul{
     border: 0;
   }
 
+
+  
 
 
