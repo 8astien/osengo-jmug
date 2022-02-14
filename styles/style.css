@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-
 header{
     background-color: #5784BA;
     height: 100px;
@@ -38,12 +36,11 @@ main {
 .navbar {
     margin: 0;
     padding: 0;
-    height: 50vh;
     display: flex;
     flex-direction: column;
 }
 .navbar > li {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -55,5 +52,3 @@ main {
     text-decoration: none;
     color: black;
 }
-=======
->>>>>>> Stashed changes
