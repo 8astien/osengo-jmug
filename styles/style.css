@@ -2,16 +2,55 @@ header{
     background-color: #5784BA;
     height: 100px;
     width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav {
     background-color: #9AC8EB;
     position: fixed;
-    z-index: -2;
     height: 100%;
-    width: 100px;
+    width: 150px;
+    margin-top: 100px;
 }
 
 main {
     margin-left: 100px;
+    margin-left: 150px;
+    padding-top: 100px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin-left: 1rem;
+}
+
+.header__viewstore {
+    margin: 1rem;
+    text-decoration: none;
+    color: black;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+}
+.navbar > li {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin-top: 1rem;
+    margin-left: 10px;
+}
+
+.navbar > li > a {
+    text-decoration: none;
+    color: black;
 }

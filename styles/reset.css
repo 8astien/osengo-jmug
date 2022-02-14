@@ -9,6 +9,7 @@
   */
   * {
     margin: 0;
+    font-family: 'Montserrat', cursive;
   }
   /*
     3. Allow percentage-based heights in the application
@@ -50,3 +51,9 @@
   #root, #__next {
     isolation: isolate;
   }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rowdies', cursive;
+  }
+
+  

@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produits</title>
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/products.css" />
+    <script src="https://kit.fontawesome.com/448cd88411.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+
+    <main>
+      <h2>Produits</h2>
+      <div>
+        <input
+          id="searchbar"
+          type="text"
+          name="search"
+          placeholder="Filtrer par catégories"
+        />
+        <a href="#">
+          <input id="validbutton" type="button" value="Nouveau Produit" />
+        </a>
+      </div>
+        <section>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Visuel</th>
+                        <th>Référence</th>
+                        <th>Catégorie</th>
+                        <th>Prix</th>
+                        <th>Stock</th>
+                        <th>Quantité</th>
+                        <th>Modifier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>####</td>
+                        <td><i class="fa-solid fa-image"></i></td>
+                        <td>La tasse P</td>
+                        <td>JJJJ</td>
+                        <td>46.00€</td>
+                        <td><i class="fa-solid fa-circle-check"></i></td>
+                        <td>10</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>####</td>
+                        <td><i class="fa-solid fa-image"></i></td>
+                        <td>St-Valentin</td>
+                        <td>AAAA</td>
+                        <td>15.00€</td>
+                        <td><i class="fa-solid fa-circle-check"></i></td>
+                        <td>3</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>####</td>
+                        <td><i class="fa-solid fa-image"></i></td>
+                        <td>Le Trop Cher</td>
+                        <td>BBBB</td>
+                        <td>234.00€</td>
+                        <td><i class="fa-solid fa-circle-check"></i></td>
+                        <td>1</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>####</td>
+                        <td><i class="fa-solid fa-image"></i></td>
+                        <td>Royal Mug</td>
+                        <td>UUUU</td>
+                        <td>12.00€</td>
+                        <td><i class="fa-solid fa-circle-xmark"></i></td>
+                        <td>0</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                    <tr>
+                        <td>####</td>
+                        <td><i class="fa-solid fa-image"></i></td>
+                        <td>LeJCestleS</td>
+                        <td>ZZZZ</td>
+                        <td>8.00€</td>
+                        <td><i class="fa-solid fa-circle-xmark"></i></td>
+                        <td>0</td>
+                        <td><i class="fa-solid fa-pen"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+
+    </main>
+  </body>
 </html>

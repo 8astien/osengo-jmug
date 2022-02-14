@@ -1,0 +1,107 @@
+header{
+    background-color: #5784BA;
+    height: 100px;
+    width: 100%;
+}
+
+nav {
+    background-color: #9AC8EB;
+    position: fixed;
+    z-index: -2;
+    height: 100%;
+    width: 100px;
+}
+
+main {
+    margin-left: 100px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  body {
+    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+  
+  table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns: 
+      minmax(150px, 1fr)
+      minmax(150px, 1.67fr)
+      minmax(150px, 1.67fr)
+      minmax(150px, 1.67fr)
+      minmax(150px, 3.33fr)
+      minmax(150px, 1.67fr)
+      minmax(150px, 3.33fr)
+      minmax(150px, 1.67fr);
+  }
+  
+  thead,
+  tbody,
+  tr {
+    display: contents;
+  }
+  
+  th,
+  td {
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  th {
+    position: sticky;
+    top: 0;
+    background: #6c7ae0;
+    text-align: left;
+    font-weight: normal;
+    font-size: 1.1rem;
+    color: white;
+  }
+  
+  th:last-child {
+    border: 0;
+  }
+  
+  td {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #808080;
+  }
+  
+  tr:nth-child(even) td {
+    background: #f8f6ff;
+  }
+
+  #validbutton {
+    background-color: #5784BA;
+    border: none;
+    font-size: 16px;
+    color: white;
+    width: 160px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 100ms ease;
+  }
+  
+ #validbutton:hover {
+    box-shadow: none;
+    opacity: 0.9;
+    transform: translateY(3px);
+  }
+
+  h2 {
+      font-family: Rowdies;
+  }
