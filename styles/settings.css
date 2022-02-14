@@ -1,0 +1,343 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies:wght@300&display=swap");
+
+#nav-settings {
+  background-color: transparent;
+  position: relative;
+  z-index: 0;
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin: 1rem 0 2rem 1.2rem;
+}
+
+#nav-settings a {
+  line-height: 50px;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: #5784ba;
+  cursor: pointer;
+}
+#nav-settings .animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  z-index: 0;
+  transition: all 0.5s ease 0s;
+  border-radius: 8px;
+}
+#nav-settings > a:nth-child(1) {
+  width: 220px;
+}
+#nav-settings > a:nth-child(2) {
+  width: 230px;
+}
+
+#nav-settings .start-settings,
+#nav-settings > a:nth-child(1):hover ~ .animation {
+  width: 220px;
+  left: 0;
+  background-color: #f7f6cf;
+  color: #000;
+}
+#nav-settings .start-maintenance,
+#nav-settings > a:nth-child(2):hover ~ .animation {
+  width: 230px;
+  left: 265px;
+  background-color: rgba(255, 4, 113, 0.3);
+}
+
+
+button {
+  background-color: #5784ba;
+  border: none;
+  font-size: 24px;
+  color: white;
+  width: 80px;
+  height: 40px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+
+button:hover {
+  box-shadow: none;
+  opacity: 0.9;
+  transform: translateY(3px);
+}
+.title {
+  font-family: "Rowdies", cursive;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 0px 1px 1px #000;
+  font-weight: 100;
+}
+#general-settings,
+#maintenance-settings {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24vw;
+  height: 60vh;
+}
+
+#general-settings > div,
+#maintenance-settings > div {
+  height: 33%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.items > div {
+  display: flex;
+  gap: 20px;
+}
+
+/* Modal */
+.button {
+  appearance: none;
+  background: #5784ba;
+  border-radius: 0.25em;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 3em;
+  line-height: 3em;
+  padding: 0 1em;
+}
+.button:hover {
+  background-color: lighten(#5784ba, 2%);
+}
+/* // -------------- DETAILS MODAL */
+
+.details-modal {
+  background: #ffffff;
+  border-radius: 0.5em;
+  box-shadow: 0 10px 20px rgba(black, 0.2);
+  left: 50%;
+  max-width: 90%;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 30em;
+  text-align: left;
+  max-height: 90vh;
+  display: flex;
+  flex-direction: column;
+
+  /* // -------------- CLOSE */
+}
+.details-modal .details-modal-close {
+  align-items: center;
+  color: #111827;
+  display: flex;
+  height: 4.5em;
+  justify-content: center;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4.5em;
+}
+.details-modal .details-modal-close svg {
+  display: block;
+}
+/* // -------------- TITLE */
+
+.details-modal .details-modal-title {
+  color: #111827;
+  padding: 1.5em 2em;
+  pointer-events: all;
+  position: relative;
+  width: calc(100% - 4.5em);
+}
+.details-modal > .details-modal-title > h1 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+/* // -------------- CONTENT */
+
+.details-modal > .details-modal-content {
+  border-top: 1px solid #e0e0e0;
+  padding: 2em;
+  pointer-events: all;
+  overflow: auto;
+}
+
+/* // -------------- OVERLAY */
+
+.details-modal-overlay {
+  transition: opacity 0.2s ease-out;
+  pointer-events: none;
+  background: rgba(#0f172a, 0.8);
+  position: fixed;
+  opacity: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+}
+.details-modal-overlay > details[open] {
+  pointer-events: all;
+  opacity: 0.5;
+}
+
+/* // -------------- DETAILS */
+
+details > summary {
+  list-style: none;
+}
+details > summary:focus {
+  outline: none;
+}
+details > summary::-webkit-details-marker {
+  display: none;
+}
+/* // -------------- OTHER */
+
+code {
+  font-family: Monaco, monospace;
+  line-height: 100%;
+  background-color: #2d2d2c;
+  padding: 0.1em 0.4em;
+  letter-spacing: -0.05em;
+  word-break: normal;
+  border-radius: 7px;
+  color: white;
+  font-weight: normal;
+  font-size: 1.75rem;
+  position: relative;
+  top: -2px;
+}
+
+.container > h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: normal;
+  color: #111827;
+}
+
+.container > p {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.container sup {
+  font-size: 1rem;
+  margin-left: 0.25em;
+  opacity: 0.5;
+  position: relative;
+}
+
+/* Button */
+.switch {
+  --width: 80px;
+  --height: calc(var(--width) / 3);
+
+  position: relative;
+  display: inline-block;
+  width: var(--width);
+  height: var(--height);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  border-radius: var(--height);
+  cursor: pointer;
+}
+
+.switch input {
+  display: none;
+}
+
+.switch .slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--height);
+  background-color: #ccc;
+  transition: all 0.4s ease-in-out;
+}
+
+.switch .slider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(var(--height));
+  height: calc(var(--height));
+  border-radius: calc(var(--height) / 2);
+  background-color: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3);
+  transition: all 0.4s ease-in-out;
+}
+
+.switch input:checked + .slider {
+  background-color: #5784ba;
+}
+
+.switch input:checked + .slider::before {
+  transform: translateX(calc(var(--width) - var(--height)));
+}
+/* Table  */
+
+
+table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns:
+    minmax(150px,0fr)
+    minmax(150px, 0fr);
+    position: relative;
+    transform: translateX(50%) translateY(42%);
+
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+th,
+td {
+  padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  background: #5784BA;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: white;
+}
+
+th:last-child {
+  border: 0;
+}
+
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #808080;
+}
+
+tr:nth-child(even) td {
+  background: rgba(244, 207, 223, 0.3);
+}
