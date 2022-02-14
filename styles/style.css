@@ -14,8 +14,12 @@ nav {
     position: fixed;
     height: 100%;
     width: 150px;
+<<<<<<< HEAD
     margin-top: 100px;
     
+=======
+    margin-top: 100px;  
+>>>>>>> 1f83a638ab759288e2fb00543bcd636f481ca16d
 }
 
 main {
@@ -33,6 +37,7 @@ main {
     margin: 1rem;
     text-decoration: none;
     color: black;
+    transition: all 100ms ease-in-out;
 }
 
 .navbar {
@@ -41,18 +46,49 @@ main {
     display: flex;
     flex-direction: column;
 }
+
 .navbar > li {
+<<<<<<< HEAD
     max-width: 100%;
+=======
+    min-width: 100%;
+>>>>>>> 1f83a638ab759288e2fb00543bcd636f481ca16d
     display: flex;
     flex-direction: column;
     list-style: none;
     margin-top: 1rem;
-    margin-left: 10px;
+    margin-bottom: 1rem;
+    padding-left: 10px;
+    padding: 0.5rem;
+    transition: all 100ms ease-in-out;
 }
 
 .navbar > li > a {
     text-decoration: none;
     color: black;
+    transition: all 100ms ease-in-out;
 }
 
+table {
+    position: relative;
+    z-index: -2;
+}
+
+
 /********* ANIMATIONS AND EFFECTS ***********/
+
+.navbar > li:hover {
+    background-color: #5784BA;
+}
+
+<<<<<<< HEAD
+/********* ANIMATIONS AND EFFECTS ***********/
+=======
+.navbar > li:hover a {
+    color: white;
+}
+
+.header__viewstore:hover {
+    color: white;
+}
+>>>>>>> 1f83a638ab759288e2fb00543bcd636f481ca16d

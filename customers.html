@@ -4,11 +4,118 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clients</title>
+    <script src="https://kit.fontawesome.com/9ac44fc111.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/customers.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Clients JMug</title>
 </head>
 <body>
     <header>
-        
+        <img src="./assets/logo.png" alt="Logo JMug" class="logo">
+        <h1>Administration JMug</h1>
+        <a class="header__viewstore" href="#"><i class="fas fa-eye"></i>Voir boutique</a>
     </header>
+    <nav>
+        <ul class="navbar">
+            <li>
+                <a href="index.html">
+                    <i class="fas fa-tachometer-alt"></i>
+                    Tableau de bord
+                </a>
+            </li>
+            <li>
+                <a href="customers.html">
+                    <i class="fas fa-user"></i>
+                    Clients
+                </a>
+            </li>
+            <li>
+                <a href="orders.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    Commandes
+                </a>
+            </li>
+            <li>
+                <a href="products.html">
+                    <i class="fas fa-dolly-flatbed"></i>
+                    Produits
+                </a>
+            </li>
+            <li>
+                <a href="settings.html">
+                    <i class="fas fa-cogs"></i>
+                    Paramètres
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <!-- YOUR CODE HERE -->
+        <h2>Clients</h2>
+        <section>
+            <article>
+                <p>Nombre total de clients : 50 <span>par semaine</span></p>
+            </article>
+        </section>
+            <section>
+                <article>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nom</th>
+                                <th>Prenom</th>
+                                <th>Email</th>
+                                <th>Date dinscription</th>
+                                <th>Nombre de commande</th>
+                                <th>Dernière visite</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>#89</td>
+                                <td>Du Pont</td>
+                                <td>Martin</td>
+                                <td>d.martin@gmail.com</td>
+                                <td>11/02/2021</td>
+                                <td>3</td>
+                                <td>10/07/2021</td>
+                            </tr>
+                        <tr>
+                            <td>#42</td>
+                            <td>Meunier</td>
+                            <td>Quentin</td>
+                            <td>m.quentin@gmail.com</td>
+                            <td>15/04/2020 </td>
+                            <td>10</td>
+                            <td>22/01/2021</td>
+                        </tr>
+                        <tr>
+                            <td>#52</td>
+                            <td>Perrins</td>
+                            <td>Nicolas</td>
+                            <td>p.nicola@gmail.com</td>
+                            <td>5/03/2019</td>
+                            <td>40</td>
+                            <td>4/02/2022</td>
+                        </tr>
+                        <tr>
+                            <td>#2</td>
+                            <td>Le Gall</td>
+                            <td>Gautier</td>
+                            <td>g.gautier@gmail.com</td>
+                            <td>23/01/2019</td>
+                            <td>35</td>
+                            <td>12/04/2021</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                 </article>
+             </section> 
+    </main>
 </body>
 </html>

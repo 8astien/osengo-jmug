@@ -1,0 +1,68 @@
+.content__title, .content__range {
+    margin: 1rem 0 0 1rem;
+}
+
+.content__range > button {
+    background-color: #5784BA;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px 10px 0 0;
+    cursor: pointer;
+    transition: all 100ms ease;
+}
+  
+.content__range > button:hover {
+    box-shadow: none;
+    opacity: 0.9;
+}
+
+
+
+.grid__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+/*************************************/
+/************ GRID LAYOUT ************/
+/*************************************/
+
+.grid__wrapper > article {
+    width: 30%;
+    overflow: scroll;
+    padding: 1rem;
+    margin: 0 1rem;
+    background: #5784ba21;
+    display: grid; 
+    grid-template-columns: 1.5fr 0.5fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+      "grid__title ."
+      "grid__one--one grid__two--one"
+      "grid__one--two grid__two--two"
+      "grid__one--three grid__two--three"
+      "grid__one--four grid__two--four";
+}
+
+.grid__title { grid-area: grid__title; }
+.grid__one--one { grid-area: grid__one--one; }
+.grid__one--two { grid-area: grid__one--two; }
+.grid__one--three { grid-area: grid__one--three; }
+.grid__one--four { grid-area: grid__one--four; }
+.grid__two--one { grid-area: grid__two--one; }
+.grid__two--two { grid-area: grid__two--two; }
+.grid__two--three { grid-area: grid__two--three; }
+.grid__two--four { grid-area: grid__two--four; }
+
+/*************************************/
+/**********DISCOUNTS LAYOUT***********/
+/*************************************/
+
+.content__discounts {
+    max-width: 100%;
+    height: 200px;
+    padding: 1rem;
+    margin: 1rem;
+    background: #5784ba21;
+}

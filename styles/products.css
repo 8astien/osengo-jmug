@@ -1,48 +1,17 @@
-header{
-    background-color: #5784BA;
-    height: 100px;
-    width: 100%;
-}
 
-nav {
-    background-color: #9AC8EB;
-    position: fixed;
-    z-index: -2;
-    height: 100%;
-    width: 100px;
-}
-
-main {
-    margin-left: 100px;
-}
-
-* {
-    box-sizing: border-box;
-  }
-  
-  html,
-  body {
-    padding: 0;
-    margin: 0;
-  }
-  
-  body {
-    font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  }
-  
-  table {
-    display: grid;
-    border-collapse: collapse;
-    min-width: 100%;
-    grid-template-columns: 
-      minmax(150px, 1fr)
-      minmax(150px, 1.67fr)
-      minmax(150px, 1.67fr)
-      minmax(150px, 1.67fr)
-      minmax(150px, 3.33fr)
-      minmax(150px, 1.67fr)
-      minmax(150px, 3.33fr)
-      minmax(150px, 1.67fr);
+table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns: 
+    minmax(150px, 1fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 3.33fr)
+    minmax(150px, 1.67fr)
+    minmax(150px, 3.33fr)
+    minmax(150px, 1.67fr);
   }
   
   thead,
@@ -62,7 +31,7 @@ main {
   th {
     position: sticky;
     top: 0;
-    background: #6c7ae0;
+    background: #5784BA;
     text-align: left;
     font-weight: normal;
     font-size: 1.1rem;
@@ -80,7 +49,7 @@ main {
   }
   
   tr:nth-child(even) td {
-    background: #f8f6ff;
+    background: rgba(244, 207, 223, 0.3);
   }
 
   #validbutton {
@@ -104,4 +73,25 @@ main {
 
   h2 {
       font-family: Rowdies;
+      margin:1rem 0 0 1rem;
+
+  }
+
+  .inputs {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  table {
+    margin-top: 50px;
+  }
+  
+  .instock {
+    color: green;
+  }
+
+  .nostock {
+    color: red;
   }
