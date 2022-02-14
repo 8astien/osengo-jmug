@@ -1,0 +1,17 @@
+header{
+    background-color: #5784BA;
+    height: 100px;
+    width: 100%;
+}
+
+nav {
+    background-color: #9AC8EB;
+    position: fixed;
+    z-index: -2;
+    height: 100%;
+    width: 100px;
+}
+
+main {
+    margin-left: 100px;
+}
