@@ -1,0 +1,8 @@
+ #searchbar {
+        width : 400px;
+    }
+
+.imageproduct, .plusbutton {
+    height: 3rem;
+    width: 3rem;
+}

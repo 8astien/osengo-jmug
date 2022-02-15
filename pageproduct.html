@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page Produit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/448cd88411.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles/reset.css" />
+    <link rel="stylesheet" href="styles/pageproduct.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="./assets/logo.png" alt="Logo JMug" class="logo" />
+      <h1>Administration JMug</h1>
+      <a class="header__viewstore" href="#"
+        ><i class="fas fa-eye"></i>Voir boutique</a
+      >
+    </header>
+    <nav>
+      <ul class="navbar">
+        <li>
+          <a href="index.html">
+            <i class="fas fa-tachometer-alt"></i>
+            Tableau de bord
+          </a>
+        </li>
+        <li>
+          <a href="customers.html">
+            <i class="fas fa-user"></i>
+            Clients
+          </a>
+        </li>
+        <li>
+          <a href="orders.html">
+            <i class="fas fa-shopping-bag"></i>
+            Commandes
+          </a>
+        </li>
+        <li>
+          <a href="products.html">
+            <i class="fas fa-dolly-flatbed"></i>
+            Produits
+          </a>
+        </li>
+        <li>
+          <a href="settings.html">
+            <i class="fas fa-cogs"></i>
+            Paramètres
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <input
+        id="searchbar"
+        type="text"
+        name="search"
+        placeholder="Rechercher un produit"
+      />
+      <section class="general">
+        <h2>Page produit</h2>
+        <div class="pictures">
+          <i class="fa-solid fa-square-plus fa-8x"></i>
+          <i class="fa-solid fa-image fa-8x"></i>
+          <i class="fa-solid fa-image fa-8x"></i>
+          <i class="fa-solid fa-image fa-8x"></i>
+        </div>
+        <br />
+        <p class="description">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil quam
+          voluptatem aperiam incidunt, eos doloremque corporis repellat nulla
+          quae sapiente excepturi animi consequuntur! Ducimus voluptas veritatis
+          iure nemo? Mollitia, in! Quidem unde facilis laboriosam eos recusandae
+          cupiditate itaque autem fugiat ex perspiciatis tempore consequatur
+          aliquid, est dolore sed suscipit qui? At, ipsa nisi aut, dolorum error
+          facere impedit reprehenderit ex doloremque repudiandae nulla natus
+          consequuntur quo vel eum
+        </p>
+        <br />
+        <div class="category">
+          <span>Catégorie</span><span>Catégorie</span><span>Catégorie</span
+          ><span>Catégorie</span><span>Catégorie</span>
+        </div>
+        <br />
+        <div class="bottom">
+          <a href="#">
+            <input id="addcategory" type="button" value="Add Catégorie" />
+          </a>
+          <i class="fa-solid fa-square-plus"></i>
+          <input
+            id="searchbar"
+            type="text"
+            name="search"
+            placeholder="Add Référence"
+          />
+        </div>
+      </section>
+      <input id="validbutton" type="button" value="Valider" />
+     </main>
+  </body>
+</html>
