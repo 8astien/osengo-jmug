@@ -12,9 +12,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -110,57 +107,72 @@
             </div>
             <div class="items">
                 <label for="maintenance-msg">Message de maintenance</label>
-                <textarea name="maintenance-msg" id="" cols="20" rows="4">Error 503</textarea>
-            </div>
-              <div class="items">
-                <label for="maintenance-msg">IP Whitelist</label>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>IP</th>
-                            <th>Country</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>87.162.95.123</td>
-                            <td>Colombia</td>
-                        </tr>
-                        <tr>
-                            <td>119.14.107.232</td>
-                            <td>Slovakia</td>
-                        </tr>
-                        <tr>
-                            <td>83.113.172.249</td>
-                            <td>Maldives</td>
-                        </tr>
-                        <tr>
-                            <td>175.103.222.107</td>
-                            <td>Marshall Islands</td>
-                        </tr>
-                        <tr>
-                            <td>0.33.84.48</td>
-                            <td>Micronesia</td>
-                        </tr>
+                <textarea name="maintenance-msg" id="" cols="20" rows="4">Error 503 :
 
-                    </tbody>
-                </table>
+                /!\ Site en maintenance /!\
+
+                Merci de votre compréhension.</textarea>
             </div>
+            <div class="items">
+                <label for="maintenance-msg">IP Whitelist</label>
+                <section class="table">
+                    <div class="table__row">
+                        <div class="table__column table__header">
+                            IP
+                        </div>
+                        <div class="table__column table__header">
+                            Country
+                        </div>
+                    </div>
+                    <div class="table__row">
+                        <div class="table__column">
+                            251.212.56.198
+                        </div>
+                        <div class="table__column">
+                            Germany
+                        </div>
+
+                    </div>
+                    <div class="table__row">
+                        <div class="table__column">
+                            12.90.202.148
+                        </div>
+                        <div class="table__column">
+                            Macau
+                        </div>
+
+                    </div>
+                    <div class="table__row">
+                        <div class="table__column">
+                            133.59.80.74
+                        </div>
+                        <div class="table__column">
+                            Marshall Islands
+                        </div>
+
+                    </div>
+                    <div class="table__row">
+                        <div class="table__column">
+                            197.11.73.22
+                        </div>
+                        <div class="table__column">
+                            Saint Helena, Ascension and Tristan da Cunha
+                        </div>
+
+                    </div>
+                    <div class="table__row">
+                        <div class="table__column">
+                            67.42.204.17
+                        </div>
+                        <div class="table__column">
+                            Aruba
+                        </div>
+                    </div>
+            </div>
+            </section>
         </form>
         <!-- YOUR CODE HERE -->
     </main>
-    <script>
-        document.querySelectorAll('*').forEach(el => {
-            if (el.offsetWidth > document.documentElement.offsetWidth) {
-                console.log('Found the worst element ever: ', el);
-            }
-        });
-        document.querySelectorAll('*').forEach(el => {
-            if (el.offsetWidth > document.documentElement.offsetHeight) {
-                console.log('Found the worst element ever: ', el);
-            }
-        });
-    </script>
 </body>
 
 </html>

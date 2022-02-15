@@ -1,8 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies:wght@300&display=swap");
 
+
+h1, h2 {
+  font-weight: 400;
+}
+
 #nav-settings {
   background-color: transparent;
-  position: relative;
+  /* position: relative; */
   z-index: 0;
   height: 50px;
   width: 100%;
@@ -85,15 +90,28 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding: 0 24vw;
-  height: 60vh;
+  padding-top: 5rem;
+  height: 75vh;
 }
 
-#general-settings > div,
-#maintenance-settings > div {
-  height: 33%;
+#general-settings > div
+{
+  height:100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+#maintenance-settings > div {
+ height:100%;
+  display: flex;
+  justify-content: space-between;
+
+}
+#maintenance-settings > div:first-child {
+  align-items: center;
+}
+#maintenance-settings > div:nth-child(2) {
+  padding-bottom: 2rem;
 }
 .items > div {
   display: flex;
@@ -292,52 +310,34 @@ code {
 /* Table  */
 
 
-table {
-  display: grid;
-  border-collapse: collapse;
-  min-width: 100%;
-  grid-template-columns:
-    minmax(150px,0fr)
-    minmax(150px, 0fr);
-    position: relative;
-    transform: translateX(50%) translateY(42%);
-
+.table {
+    display: flex;
+    flex-flow: column;
+    max-width: 100%;
 }
 
-thead,
-tbody,
-tr {
-  display: contents;
+.table__row {
+    display: flex;
+    max-width: 100%;
+}
+.table__row:nth-of-type(even) {
+    background: rgba(244, 207, 223, 0.3);
 }
 
-th,
-td {
-  padding: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+.table__row:nth-of-type(odd) {
+    background-color: #fff;
 }
 
-th {
-  position: sticky;
-  top: 0;
-  background: #5784BA;
-  text-align: left;
-  font-weight: normal;
-  font-size: 1.1rem;
-  color: white;
+.table__column {
+    display: flex;
+    text-align: left;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 0 1rem;
+    word-break: break-word;
 }
 
-th:last-child {
-  border: 0;
-}
-
-td {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #808080;
-}
-
-tr:nth-child(even) td {
-  background: rgba(244, 207, 223, 0.3);
+.table__header {
+    background-color: #5784BA;
+    color: #fff;
 }
