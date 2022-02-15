@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/customerscard.css">
     <link rel="stylesheet" href="styles/style.css">
     <title>Info du client JMug</title>
 </head>
+
 <body>
     <header>
         <img src="./assets/logo.png" alt="Logo JMug" class="logo">
@@ -54,39 +56,67 @@
     </nav>
     <main>
         <!-- YOUR CODE HERE -->
-    <h2>Info du client</h2> 
+        <h2>Info du client</h2>
         <section class="container">
-            <article class="info">    
-                <ul>
-                    <li>civilité :</li>
-                    <li>Âge :</li>
-                    <li>Date d'inscription</li>
-                    <li>Date de dernière visite :</li>
-                    <li>Langue :</li>
-                    <li>Adresse :</li>
-                    <li> <p>newsletter :</p> 
-                        <label for="yes">Yes</label>
-                        <input type="checkbox" id="yes" name="yes">
-                        <label for="no">No</label>
-                        <input type="checkbox" id="no" name="no"></li>
-                        <li><button>Modif profil client</button></li>                                                
-                </ul>             
+            <article class="info border">
+                <h3>Status du client</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom :</th>
+                            <th>Prénom :</th>
+                            <th>Civilité :</th>
+                            <th>Âge :</th>
+                            <th>Date d'inscription :</th>
+                            <th>Date de dernière visite :</th>
+                            <th>Langue :</th>
+                            <th>Adresse :</th>
+                            <th>Newsletter :</th>
+                            <th>profil client :</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Du Pont</td>
+                            <td>Martin</td>
+                            <td>Mr</td>
+                            <td>28</td>
+                            <td>11/02/2021</td>
+                            <td>10/07/2021</td>
+                            <td>Français</td>
+                            <td>28 rue la jolie</td>
+                            <td><label for="yes">Yes</label>
+                                <input type="checkbox" id="yes" name="yes">
+                                <label for="no">No</label>
+                                <input type="checkbox" id="no" name="no">
+                            </td>
+                            <td><button>Modif profil client</button></td>
+                        </tr>
+                    </tbody>
+                </table>
             </article>
-            <article class="deprive">
-                <h2>Ajouter une note privée</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae magni error neque assumenda debitis laboriosam ad dolorem molestiae amet autem unde eveniet nihil, sint, ea iste aliquam veritatis ex!</p>
+            <article class="deprive border">
+                <h3>Ajouter une note privée</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae vitae magni error neque assumenda
+                    debitis laboriosam ad dolorem molestiae amet autem unde eveniet nihil, sint, ea iste aliquam
+                    veritatis ex!</p>
             </article>
-            <article class="commande">
-                <h2>Liste des commande passer</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur suscipit dolore porro. Maiores voluptates nihil earum voluptatum qui fugit quas maxime debitis laudantium eveniet, tempora veritatis vitae ipsam distinctio non.</p>
+        </section>
+        <section class="container">
+            <article class="commande border">
+                <h3>Liste des commande passer</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur</p>
             </article>
-            <article class="reduction">
-                <h2>Bon de réduction</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero autem amet veniam corrupti magnam cupiditate inventore, officia aliquam nisi blanditiis, cum, tempora ullam commodi architecto voluptatibus placeat dolores numquam voluptatem.</p>
+            <article class="reduction border">
+                <h3>Bon de réduction</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero autem amet veniam corrupti magnam
+                    cupiditate inventore, officia aliquam nisi blanditiis, cum, tempora ullam commodi architecto
+                    voluptatibus placeat dolores numquam voluptatem.</p>
             </article>
         </section>
 
     </main>
-    
+
 </body>
+
 </html>

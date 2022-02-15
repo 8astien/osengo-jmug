@@ -71,102 +71,167 @@
                 Année
             </button>
         </div>
-        <div class="grid__wrapper">
-            <article>
-                <div class="grid__title">
-                    VISITEURS :
-                </div>
-                <div class="grid__one--one">
-                    Nombre de visites
-                </div>
-                <div class="grid__one--two">
-                    Volume de commandes
-                </div>
-                <div class="grid__one--three">
-                    Taux de transformation
-                </div>
-                <div class="grid__one--four">
-                    Paniers abandonnés
-                </div>
-                <div class="grid__two--one">
-                    4200
-                </div>
-                <div class="grid__two--two">
-                    1254
-                </div>
-                <div class="grid__two--three">
-                    29.85%
-                </div>
-                <div class="grid__two--four">
-                    802
-                </div>
-            </article>
-            <article>
-                <div class="grid__title">
-                    VISITES :
-                </div>
-                <div class="grid__one--one">
-                    Nombre total de visites
-                </div>
-                <div class="grid__one--two">
-                    Visiteurs uniques
-                </div>
-                <div class="grid__one--three">
-                    Déjà client
-                </div>
-                <div class="grid__one--four">
-                    Nouveau client
-                </div>
-                <div class="grid__two--one">
-                    5800
-                </div>
-                <div class="grid__two--two">
-                    4200
-                </div>
-                <div class="grid__two--three">
-                    2100(50%)
-                </div>
-                <div class="grid__two--four">
-                    2100(50%)
-                </div>
-            </article>
-            <article>
-                <div class="grid__title">
-                    CHIFFRE D'AFFAIRES :
-                </div>
-                <div class="grid__one--one">
-                    CA total
-                </div>
-                <div class="grid__one--two">
-                    Nombre de commandes
-                </div>
-                <div class="grid__one--three">
-                    Panier moyen
-                </div>
-                <div class="grid__one--four">
-                    Bénéfice net
-                </div>
-                <div class="grid__two--one">
-                    87 000€
-                </div>
-                <div class="grid__two--two">
-                    1254
-                </div>
-                <div class="grid__two--three">
-                    69.37€
-                </div>
-                <div class="grid__two--four">
-                    53 000€
-                </div>
-            </article>
+        <div class="tables__wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>VISITEURS :</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombres de visites</td>
+                        <td>4200</td>
+                    </tr>
+                    <tr>
+                        <td>Volume de commandes</td>
+                        <td>1254</td>
+                    </tr>
+                    <tr>
+                        <td>Taux de transformation</td>
+                        <td>29.85%</td>
+                    </tr>
+                    <tr>
+                        <td>Paniers abandonnés</td>
+                        <td>802</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>VISITES :</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre total de visites</td>
+                        <td>5800</td>
+                    </tr>
+                    <tr>
+                        <td>Visiteurs uniques</td>
+                        <td>4200</td>
+                    </tr>
+                    <tr>
+                        <td>Déjà client</td>
+                        <td>2100 (50%)</td>
+                    </tr>
+                    <tr>
+                        <td>Nouveaux clients</td>
+                        <td>2100 (50%)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th>CHIFFRE D'AFFAIRES</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CA Total</td>
+                        <td>87 000€</td>
+                    </tr>
+                    <tr>
+                        <td>Nombre de commandes</td>
+                        <td>1254</td>
+                    </tr>
+                    <tr>
+                        <td>Panier moyen</td>
+                        <td>69,37€</td>
+                    </tr>
+                    <tr>
+                        <td>Bénéfice net</td>
+                        <td>53 000€</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
 
         <section class="content__discounts">
-            
+            <form action="#" method="post" class="discount__form">
+                <h3>Réductions globales :</h3>
+                <span class="discount__new">Nouveau code de réduction :</span>
+                <span>
+                    <label for="discount__code">
+                        Texte du code :
+                    </label>
+                    <input type="text" name="discount__code" id="discount__code" placeholder="STVAL10">
+                </span>
+                <span>
+                    <label for="discount__timeframe">
+                        Validitée :
+                    </label>
+                    <select name="discount__timeframe" id="discount__timeframe">
+                        <option value="one">1 jour</option>
+                        <option value="three">3 jours</option>
+                        <option value="five">5 jours</option>
+                        <option value="seven">7 jours</option>
+                    </select>
+                </span>
+                <span>
+                    <label for="discount__rate discount__type">
+                        Montant : </label>
+                    <div>
+                        <input type="text" name="disocunt__rate" id="discount__rate" placeholder="10">
+                        <select name="discount__type" id="discount__type">
+                            <option value="euros">€</option>
+                            <option value="percent">%</option>
+                        </select>
+                    </div>
+                </span>
+                <button type="submit" class="discount__submit">
+                    Créer code
+                </button>
+            </form>
+
+            <table class="discount__table">
+                <thead>
+                    <tr>
+                        <th>Codes en cours</th>
+                        <th>Montant</th>
+                        <th>Durée restante</th>
+                        <th>Supprimer</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FFDH12</td>
+                        <td>12%</td>
+                        <td>5 jours</td>
+                        <td><i class="far fa-trash-alt red-fa"></i></td>
+                    </tr>
+                    <tr>
+                        <td>FHDISE5</td>
+                        <td>5€</td>
+                        <td>1 jour</td>
+                        <td><i class="far fa-trash-alt red-fa"></i></td>
+                    </tr>
+                    <tr>
+                        <td>CHANDELEUR9</td>
+                        <td>9€</td>
+                        <td>4 jours</td>
+                        <td><i class="far fa-trash-alt red-fa"></i></td>
+                    </tr>
+                    <tr>
+                        <td>DSFHGSDG10</td>
+                        <td>10%</td>
+                        <td>2 jours</td>
+                        <td><i class="far fa-trash-alt red-fa"></i></td>
+                    </tr>
+                    <tr>
+                        <td>N00B30</td>
+                        <td>0,30€</td>
+                        <td>7 jours</td>
+                        <td><i class="far fa-trash-alt red-fa"></i></td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
-
-
-
     </main>
 </body>
 

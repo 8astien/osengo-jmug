@@ -1,68 +1,133 @@
-.content__title, .content__range {
-    margin: 1rem 0 0 1rem;
+.content__title,
+.content__range {
+  margin: 1rem 0 0 1rem;
 }
 
 .content__range > button {
-    background-color: #5784BA;
-    border: none;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 10px 10px 0 0;
-    cursor: pointer;
-    transition: all 100ms ease;
+  background-color: #5784ba;
+  border: none;
+  color: white;
+  padding: 0.2rem 0.8rem;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: all 100ms ease;
 }
-  
+
 .content__range > button:hover {
-    box-shadow: none;
-    opacity: 0.9;
+  box-shadow: none;
+  opacity: 0.9;
 }
 
-
-
-.grid__wrapper {
-    display: flex;
-    justify-content: space-between;
-}
 /*************************************/
-/************ GRID LAYOUT ************/
+/************ TABLES LAYOUT ************/
 /*************************************/
 
-.grid__wrapper > article {
-    width: 30%;
-    overflow: scroll;
-    padding: 1rem;
-    margin: 0 1rem;
-    background: #5784ba21;
-    display: grid; 
-    grid-template-columns: 1.5fr 0.5fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
-    gap: 10px 10px; 
-    grid-template-areas: 
-      "grid__title ."
-      "grid__one--one grid__two--one"
-      "grid__one--two grid__two--two"
-      "grid__one--three grid__two--three"
-      "grid__one--four grid__two--four";
+.tables__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
-.grid__title { grid-area: grid__title; }
-.grid__one--one { grid-area: grid__one--one; }
-.grid__one--two { grid-area: grid__one--two; }
-.grid__one--three { grid-area: grid__one--three; }
-.grid__one--four { grid-area: grid__one--four; }
-.grid__two--one { grid-area: grid__two--one; }
-.grid__two--two { grid-area: grid__two--two; }
-.grid__two--three { grid-area: grid__two--three; }
-.grid__two--four { grid-area: grid__two--four; }
+.tables__wrapper > table {
+  margin: 0 1rem;
+  border-collapse: collapse;
+  min-width: 30%;
+}
+
+th,
+td {
+  padding: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+th {
+  background: #5784ba;
+  text-align: left;
+  font-weight: normal;
+  font-size: 1rem;
+  color: white;
+}
+
+th:last-child {
+  border: 0;
+}
+
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #808080;
+}
+
+tr:nth-child(even) td {
+  background: rgba(244, 207, 223, 0.3);
+}
 
 /*************************************/
 /**********DISCOUNTS LAYOUT***********/
 /*************************************/
 
 .content__discounts {
-    max-width: 100%;
-    height: 200px;
+  max-width: 100%;
+  padding: 1rem;
+  margin: 1rem;
+  background: #5784ba21;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.discount__new {
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+.discount__form {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    min-width: 250px;
     padding: 1rem;
+    border: 1px solid #5784ba;
+}
+
+.discount__form > span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 1rem;
-    background: #5784ba21;
+}
+#discount__code{
+    width: 100px;
+    margin-left: 1rem;
+}
+
+#discount__rate {
+    width: 50px;
+}
+
+.discount__submit {
+    background-color: #5784BA;
+    border: none;
+    color: white;
+    width: 120px;
+    height: 40px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 100ms ease;
+}
+
+.discount__submit:hover {
+    box-shadow: none;
+    opacity: 0.9;
+    transform: translateY(3px);
+}
+
+/************ DISCOUNT TABLE *********/
+
+.discount__table {
+    border-collapse: collapse;
+}
+.red-fa {
+    transition: all 300ms ease-in-out;
+    color: red;
 }
