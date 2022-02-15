@@ -89,6 +89,15 @@ main {
     margin: 10px;
     
 }
+.acces-directs{
+    box-shadow:  0px 0.3px 0.4px hsl(var(--shadow-color) / 0.13),
+    0px 0.9px 1.2px -0.4px hsl(var(--shadow-color) / 0.19),
+    0px 2px 2.6px -0.9px hsl(var(--shadow-color) / 0.25),
+    0.1px 4.4px 5.7px -1.3px hsl(var(--shadow-color) / 0.31);
+}
+:root {
+    --shadow-color: 0deg 0% 60%;
+}
 .list-acces{
     display: flex;
     gap: .9rem;
