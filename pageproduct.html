@@ -70,7 +70,17 @@
         placeholder="Rechercher un produit"
       />
       <section class="general">
-        <h2>Page produit</h2>
+        <div class="content__range">
+            <button>
+                Général
+            </button>
+            <button>
+                Quantité
+            </button>
+            <button>
+                Prix
+            </button>
+        </div>
         <div class="pictures">
           <i class="fa-solid fa-square-plus fa-8x"></i>
           <i class="fa-solid fa-image fa-8x"></i>
@@ -90,24 +100,32 @@
         </p>
         <br />
         <div class="category">
-          <span>Catégorie</span><span>Catégorie</span><span>Catégorie</span
-          ><span>Catégorie</span><span>Catégorie</span>
+            <button class="button1">Catégorie</button>
+            <button class="button2">Catégorie</button>
+            <button class="button2">Catégorie</button>
+            <button class="button1">Catégorie</button>
+            <button class="button3">Catégorie</button>
+         
         </div>
         <br />
         <div class="bottom">
           <a href="#">
             <input id="addcategory" type="button" value="Add Catégorie" />
           </a>
-          <i class="fa-solid fa-square-plus"></i>
+          <span class="wrapper-ref">
+          <i class="fa-solid fa-square-plus fa-2x"></i>
           <input
-            id="searchbar"
+            id="searchbar2"
             type="text"
             name="search"
             placeholder="Add Référence"
           />
+        </span>
         </div>
       </section>
+      <span class="wrapper-btn">
       <input id="validbutton" type="button" value="Valider" />
+      </span>
      </main>
   </body>
 </html>

@@ -1,8 +1,114 @@
- #searchbar {
-        width : 400px;
-    }
-
-.imageproduct, .plusbutton {
-    height: 3rem;
-    width: 3rem;
+:root {
+  --shadow-color: 0deg 0% 60%;
 }
+
+#searchbar {
+    position: relative;
+    left: 50px;
+    top: 50px;
+    width:400px;
+    
+}
+
+.imageproduct,
+.plusbutton {
+  height: 3rem;
+  width: 3rem;
+}
+.content__range > button {
+  background-color: #5784ba;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 10px 10px 0 0;
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+.content__range > button:hover {
+  box-shadow: none;
+  opacity: 0.9;
+}
+
+.general {
+  box-shadow: 0px 0.3px 0.4px hsl(var(--shadow-color) / 0.13),
+    0px 0.9px 1.2px -0.4px hsl(var(--shadow-color) / 0.19),
+    0px 2px 2.6px -0.9px hsl(var(--shadow-color) / 0.25),
+    0.1px 4.4px 5.7px -1.3px hsl(var(--shadow-color) / 0.31);
+  margin-top: 50px;
+  padding: 50px;
+}
+.pictures {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.description {
+  border: 1px solid rgba(0, 0, 0, 0.151);
+  padding: 5px;
+}
+
+.button1 {
+    color: red;
+
+}
+.button2 {
+    color: blueviolet;
+    
+}
+.button3 {
+    color: orange;
+    
+}
+
+ #addcategory {
+    background-color: #5784BA;
+    border: none;
+    font-size: 16px;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 100ms ease;
+  }
+  
+  #addcategory:hover {
+    box-shadow: none;
+    opacity: 0.9;
+    transform: translateY(3px);
+  }
+
+  .bottom {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  #validbutton {
+    background-color: #5784BA;
+    border: none;
+    font-size: 20px;
+    color: white;
+    width: 100px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 100ms ease; 
+  }
+  #validbutton:hover {
+    box-shadow: none;
+    opacity: 0.9;
+    transform: translateY(3px);
+  }
+
+  .wrapper-ref {
+      display: flex;
+      align-items: center;
+  }
+  .wrapper-btn {
+      display: flex;
+      justify-content: end;
+      margin: 1rem;
+  }
