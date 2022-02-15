@@ -73,4 +73,10 @@ table {
     background-color: #5784BA;
 }
 
-/********* ANIMATIONS AND EFFECTS ***********/
+.navbar > li:hover a {
+    color: white;
+}
+
+.header__viewstore:hover {
+    color: white;
+}
