@@ -9,12 +9,13 @@ h2 {
   background-color: transparent;
   z-index: 0;
   height: 50px;
-  width: 100%;
+  width: calc(100% - 150px);
   align-items: center;
   display: flex;
   justify-content: flex-start;
-  gap: 3rem;
+  /* gap: 3rem; */
   margin: 1rem 0 2rem 1.2rem;
+  position: static;
 }
 
 #nav-settings a {
@@ -30,32 +31,34 @@ h2 {
 }
 #nav-settings .animation {
   position: absolute;
-  height: 100%;
-  top: 0;
+  height: 3rem;
+  /* top: 0; */
   z-index: 0;
   transition: all 0.5s ease 0s;
   border-radius: 8px;
 }
 #nav-settings > a:nth-child(1) {
-  width: 220px;
+  width: 230px;
 }
 #nav-settings > a:nth-child(2) {
   width: 230px;
+  padding-left: 2rem;
 }
 
 #nav-settings .start-settings,
 #nav-settings > a:nth-child(1):hover ~ .animation {
-  width: 220px;
-  left: 0;
+  width: 240px;
+  left: 170px;
   background-color: #9ac8eb;
   color: #fff;
+  transform: translateX(-5px);
 }
 #nav-settings .start-maintenance,
 #nav-settings > a:nth-child(2):hover ~ .animation {
-  width: 230px;
-  left: 265px;
+  width: 240px;
+  left: 410px;
   background-color: #5784ba;
-  color: #fff;
+  /* transform: translateX(-5px); */
 }
 #nav-settings a:hover {
   transition: all 0.5s ease;
@@ -94,7 +97,6 @@ h2 {
   display: flex;
   flex-direction: column;
   padding: 0 24vw;
-  padding-top: 5rem;
   height: 75vh;
 }
 
@@ -225,9 +227,9 @@ h2 {
   z-index: 100;
 }
 #details-modal-content > div:nth-child(1) {
-  transform: translateY(-15px);
   display: flex;
   justify-content: space-between;
+  transform: translateY(-12px);
 }
 #modal-help:checked + div + #details-modal-content {
   display: flex;
