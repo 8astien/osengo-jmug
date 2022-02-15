@@ -36,8 +36,8 @@
 th,
 td {
   padding: 15px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
 }
 
 th {
