@@ -3,11 +3,10 @@
 }
 
 #searchbar {
-    position: relative;
-    left: 50px;
-    top: 50px;
-    width:400px;
-    
+  position: relative;
+  left: 50px;
+  top: 50px;
+  width: 400px;
 }
 
 .imageproduct,
@@ -49,66 +48,63 @@
 }
 
 .button1 {
-    color: red;
-
+  color: red;
 }
 .button2 {
-    color: blueviolet;
-    
+  color: blueviolet;
 }
 .button3 {
-    color: orange;
-    
+  color: orange;
 }
 
- #addcategory {
-    background-color: #5784BA;
-    border: none;
-    font-size: 16px;
-    color: white;
-    width: 150px;
-    height: 50px;
-    border-radius: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    transition: all 100ms ease;
-  }
-  
-  #addcategory:hover {
-    box-shadow: none;
-    opacity: 0.9;
-    transform: translateY(3px);
-  }
+#addcategory {
+  background-color: #5784ba;
+  border: none;
+  font-size: 16px;
+  color: white;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 100ms ease;
+}
 
-  .bottom {
-      display: flex;
-      justify-content: space-between;
-  }
+#addcategory:hover {
+  box-shadow: none;
+  opacity: 0.9;
+  transform: translateY(3px);
+}
 
-  #validbutton {
-    background-color: #5784BA;
-    border: none;
-    font-size: 20px;
-    color: white;
-    width: 100px;
-    height: 50px;
-    border-radius: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-    transition: all 100ms ease; 
-  }
-  #validbutton:hover {
-    box-shadow: none;
-    opacity: 0.9;
-    transform: translateY(3px);
-  }
+.bottom {
+  display: flex;
+  justify-content: space-between;
+}
 
-  .wrapper-ref {
-      display: flex;
-      align-items: center;
-  }
-  .wrapper-btn {
-      display: flex;
-      justify-content: end;
-      margin: 1rem;
-  }
+#validbutton {
+  background-color: #5784ba;
+  border: none;
+  font-size: 20px;
+  color: white;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  transition: all 100ms ease;
+}
+#validbutton:hover {
+  box-shadow: none;
+  opacity: 0.9;
+  transform: translateY(3px);
+}
+
+.wrapper-ref {
+  display: flex;
+  align-items: center;
+}
+.wrapper-btn {
+  display: flex;
+  justify-content: end;
+  margin: 1rem;
+}
