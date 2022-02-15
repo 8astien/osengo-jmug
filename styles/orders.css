@@ -22,7 +22,7 @@ nav {
     margin-top: 100px;
 }
 main {
-    margin-left: 200px;
+    margin-left: 150px;
     padding-top: 200px;
 }
 
@@ -86,17 +86,20 @@ main {
     height: 100px;
     background-color: #f7f6cf ;
     padding: 80px;
+    margin: 10px;
     
 }
 .list-acces{
     display: flex;
-    justify-content: space-evenly;
+    gap: .9rem;
+    justify-content: space-between;
     list-style: none;
 }
 .list-acces li a{
     text-decoration: none;
 
 }
+
 .qantite{
     font-size: 3rem;
     color: #f4cfdf85;
@@ -122,7 +125,7 @@ table {
       
   }
 #title-commandes{
-    margin-top: 100px;
+    margin-top: 150px;
 }
   thead,
   tbody,
