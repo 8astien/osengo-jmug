@@ -57,7 +57,7 @@ h2 {
   background-color: #5784ba;
   color: #fff;
 }
-#nav-settings a:hover{
+#nav-settings a:hover {
   transition: all 0.5s ease;
   color: #fff;
 }
@@ -207,34 +207,32 @@ h2 {
 
 #details-modal-content {
   position: fixed;
-  width: 70vw;
-  height: 96vh;
+  width: 50vw;
+  height: 50vh;
   background: #fff;
   color: #000;
-  top: 50%;
-  left: 44%;
+  top: 40%;
+  left: calc(50% + 75px);
+  display: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
   /* max-width: 70vw;
   max-height: 150vh; */
-  pointer-events: none;
-  display: none;
-  transform: translate(-35%, -50%);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
 
 .close_modal {
-  position: fixed;
-  top: 3%;
-  right: 12%;
-  display: none;
   cursor: pointer;
   z-index: 100;
 }
-
+#details-modal-content > div:nth-child(1) {
+  transform: translateY(-15px);
+  display: flex;
+  justify-content: space-between;
+}
 #modal-help:checked + div + #details-modal-content {
   display: flex;
   z-index: 100;
   padding: 2rem;
-  /* text-align: center; */
   flex-direction: column;
   justify-content: space-between;
 }
@@ -243,7 +241,8 @@ h2 {
   height: 100%;
   justify-content: space-evenly;
   display: flex;
-  flex-flow: column;
+  overflow-y: auto;
+  flex-wrap: wrap;
 }
 #modal-help h2 {
   margin-left: auto;
