@@ -53,7 +53,10 @@ table {
       minmax(120px, 1fr);
      
       
-  }
+}
+table a{
+    text-decoration: none;
+}
 #title-commandes{
     margin-top: 20px;
 }

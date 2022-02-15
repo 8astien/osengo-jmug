@@ -88,6 +88,9 @@ table {
       minmax(120px, 1fr)
       minmax(120px, 1fr);
   }
+  table a{
+      text-decoration: none;
+  }
 
   thead,
   tbody,
