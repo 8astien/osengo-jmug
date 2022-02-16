@@ -279,7 +279,6 @@ h2 {
   display: none;
 }
 
-
 /* Media  */
 @media only screen and (min-width: 1200px) and (max-width: 1600px) {
   .table {
@@ -324,7 +323,7 @@ h2 {
   #maintenance-settings > div {
     height: auto;
   }
-   #details-modal-content {
+  #details-modal-content {
     left: 50%;
     width: 80vw;
   }
@@ -333,16 +332,15 @@ h2 {
 @media only screen and (min-width: 572px) and (max-width: 991px) {
   #general-settings,
   #maintenance-settings {
-    margin-top: 12vh;
-    position: fixed;
-    top: 160px;
+    position: relative;
+    top: 62px;
     width: 100%;
     z-index: -1;
     padding: 0px 8vw;
   }
 
   .title {
-    position: fixed;
+    position: absolute;
     top: 100px;
     background: #5784ba;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
@@ -352,9 +350,9 @@ h2 {
   }
 
   #nav-settings {
-    position: fixed;
+    position: absolute;
     width: 100%;
-    top: 18.7vh;
+    top: 176px;
     margin: 0;
     justify-content: flex-start;
   }
@@ -427,19 +425,20 @@ h2 {
     top: 0;
     position: fixed;
   }
+
   #general-settings,
   #maintenance-settings {
-    position: relative;
+    /* position: absolute; */
     width: 100%;
     z-index: -1;
     padding: 0px 5vw;
-    /*     top: 20vh;
- */
+    /* top: 20vh; */
+    margin: auto;
     gap: 0;
   }
-  #general-settings {
-    top: 100px;
-  }
+  /* #general-settings {
+    top: 85vh;
+  } */
 
   body > nav:nth-child(2) {
     display: none;
@@ -483,8 +482,10 @@ h2 {
   }
 
   .mobile_screen {
-    display: block;
     position: relative;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
   }
   #general-settings > div,
   #maintenance-settings > div {
@@ -517,5 +518,12 @@ h2 {
   }
   .modal-maintenance-mobile {
     display: block;
+  }
+  .mobile-flex {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 200px;
+    gap: 5vh;
   }
 }
