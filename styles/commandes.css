@@ -84,11 +84,15 @@ table {
       minmax(120px, 1fr)
       minmax(120px, 1fr)
       minmax(120px, 1fr);
-      padding: 20px;
+      
   }
   table a{
       text-decoration: none;
   }
+  #title-commandes{
+    
+    padding: 20px;
+}
 
   thead,
   tbody,
