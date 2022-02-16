@@ -335,7 +335,6 @@ h2 {
     position: relative;
     top: 62px;
     width: 100%;
-    z-index: -1;
     padding: 0px 8vw;
   }
 
@@ -430,7 +429,6 @@ h2 {
   #maintenance-settings {
     /* position: absolute; */
     width: 100%;
-    z-index: -1;
     padding: 0px 5vw;
     /* top: 20vh; */
     margin: auto;
