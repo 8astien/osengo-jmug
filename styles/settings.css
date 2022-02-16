@@ -1,10 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies:wght@300&display=swap");
 
+/* Titles */
 h1,
 h2 {
   font-weight: 400;
 }
+.title {
+  font-family: "Rowdies", cursive;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 0px 1px 1px #000;
+  font-weight: 100;
+}
 
+/* NavBar Paramètres gen & maintenance */
 #nav-settings {
   background-color: transparent;
   z-index: 0;
@@ -13,7 +23,6 @@ h2 {
   align-items: center;
   display: flex;
   justify-content: flex-start;
-  /* gap: 3rem; */
   margin: 1rem 0 2rem 1.2rem;
   position: static;
 }
@@ -32,7 +41,6 @@ h2 {
 #nav-settings .animation {
   position: absolute;
   height: 3rem;
-  /* top: 0; */
   z-index: 0;
   transition: all 0.5s ease 0s;
   border-radius: 8px;
@@ -58,12 +66,12 @@ h2 {
   width: 240px;
   left: 410px;
   background-color: #5784ba;
-  /* transform: translateX(-5px); */
 }
 #nav-settings a:hover {
   transition: all 0.5s ease;
   color: #fff;
 }
+/* Modal  */
 #details-modal-title {
   background-color: #5784ba;
   border: none;
@@ -84,14 +92,66 @@ h2 {
   opacity: 0.9;
   transform: translateY(3px);
 }
-.title {
-  font-family: "Rowdies", cursive;
+#modal-help[type="checkbox"] {
+  display: none;
+}
+
+#details-modal-content {
+  position: fixed;
+  width: 50vw;
+  height: 50vh;
+  background: #fff;
+  color: #000;
+  top: 40%;
+  left: calc(50% + 75px);
+  display: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+#details-modal-content > div:nth-child(1) {
   display: flex;
   justify-content: space-between;
-  padding: 15px;
-  box-shadow: 0px 1px 1px #000;
-  font-weight: 100;
+  transform: translateY(-12px);
 }
+#modal-help:checked + div + #details-modal-content {
+  display: flex;
+  z-index: 100;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-content {
+  height: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+#modal-help h2 {
+  margin-left: auto;
+}
+
+#modal-help:checked + div + #details-modal-content + .close_modal {
+  display: block;
+}
+
+.modal-content > .items {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+.modal-content > .items > label {
+  margin-bottom: 10px;
+  font-weight: 901;
+  font-size: 1.1rem;
+}
+.close_modal {
+  cursor: pointer;
+  z-index: 100;
+}
+/* Main */
 #general-settings,
 #maintenance-settings {
   display: flex;
@@ -99,17 +159,15 @@ h2 {
   padding: 0 24vw;
   height: 75vh;
 }
-
-#general-settings > div {
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+/* Main items */
+#general-settings > div,
 #maintenance-settings > div {
   height: 100%;
   display: flex;
   justify-content: space-between;
+}
+#general-settings > div {
+  align-items: center;
 }
 #maintenance-settings > div:first-child {
   align-items: center;
@@ -121,6 +179,8 @@ h2 {
   display: flex;
   gap: 20px;
 }
+/* Switch toggle */
+
 .switch {
   --width: 80px;
   --height: calc(var(--width) / 3);
@@ -203,64 +263,201 @@ h2 {
   color: #fff;
 }
 
-#modal-help[type="checkbox"] {
+.mobile_screen {
   display: none;
 }
-
-#details-modal-content {
-  position: fixed;
-  width: 50vw;
-  height: 50vh;
-  background: #fff;
-  color: #000;
-  top: 40%;
-  left: calc(50% + 75px);
+.mobile_title {
   display: none;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-  /* max-width: 70vw;
-  max-height: 150vh; */
+}
+.modal-maintenance-mobile{
+  display:none
 }
 
-.close_modal {
-  cursor: pointer;
-  z-index: 100;
-}
-#details-modal-content > div:nth-child(1) {
-  display: flex;
-  justify-content: space-between;
-  transform: translateY(-12px);
-}
-#modal-help:checked + div + #details-modal-content {
-  display: flex;
-  z-index: 100;
-  padding: 2rem;
-  flex-direction: column;
-  justify-content: space-between;
+/* Media  */
+@media only screen and (max-width: 1300px) and (min-width: 992px) {
+  #general-settings,
+  #maintenance-settings {
+    padding: 0px 12vw;
+  }
 }
 
-.modal-content {
-  height: 100%;
-  justify-content: space-evenly;
-  display: flex;
-  overflow-y: auto;
-  flex-wrap: wrap;
-}
-#modal-help h2 {
-  margin-left: auto;
+@media only screen and (min-width: 572px) and (max-width: 991px) {
+  header {
+    top: 0;
+    position: fixed;
+  }
+  #general-settings,
+  #maintenance-settings {
+    margin-top: 12vh;
+    position: fixed;
+    top: 160px;
+    width: 100%;
+    z-index: -1;
+    padding: 0px 8vw;
+  }
+  body > nav:nth-child(2) {
+    display: none;
+  }
+  main {
+    padding: 0;
+    margin: 0;
+  }
+  .title {
+    position: fixed;
+    top: 100px;
+    background: #5784ba;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1;
+    box-shadow: none;
+  }
+
+  #nav-settings {
+    position: fixed;
+    width: 100%;
+    top: 17.7vh;
+    margin: 0;
+    justify-content: space-around;
+  }
+  #nav-settings .start-settings,
+  #nav-settings > a:nth-child(1):hover ~ .animation {
+    left: 2.3rem;
+    transform: translateX(0);
+    background-color: #5784ba;
+  }
+  #nav-settings .start-maintenance,
+  #nav-settings > a:nth-child(2):hover ~ .animation {
+    left: 21.1rem;
+  }
+  #nav-settings .start-maintenance,
+  #nav-settings > a:nth-child(2) {
+    padding-left: 0;
+  }
+  #general-settings > .items > div,
+  #maintenance-settings > .items > div {
+    width: 50%;
+    justify-content: flex-end;
+  }
+  #general-settings > .items_toggle > .switch,
+  #maintenance-settings > .items_toggle > .switch {
+    width: 80px;
+  }
+  #general-settings > .items_toggle > *,
+  #maintenance-settings > .items_toggle > * {
+    width: 50%;
+  }
+  #email-contact {
+    width: 100%;
+  }
+  #nav-settings a {
+    z-index: 1;
+    transform: translateX(4px);
+  }
+  #nav-settings .animation {
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  }
+  #details-modal-content {
+    left: 50%;
+  }
+  .table {
+    width: 45%;
+  }
 }
 
-#modal-help:checked + div + #details-modal-content + .close_modal {
-  display: block;
-}
+@media only screen and (max-width: 571px) {
+  header {
+    top: 0;
+    position: fixed;
+  }
+  #general-settings,
+  #maintenance-settings {
+    margin-top: 12vh;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+    padding: 0px 5vw;
+  }
+  #general-settings {
+    top: 100px;
+  }
 
-.modal-content > .items {
-  padding: 1rem;
-  display: flex;
-  flex-flow: column;
+  body > nav:nth-child(2) {
+    display: none;
+  }
+  main {
+    padding: 0;
+    margin: 0;
+  }
+  .title {
+    position: fixed;
+    top: 100px;
+    background: #5784ba;
+    box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1;
+    box-shadow: none;
+  }
+
+  #nav-settings {
+    display: none;
+  }
+
+  #general-settings > .items > div,
+  #maintenance-settings > .items > div {
+    width: 50%;
+    justify-content: flex-end;
+  }
+  #general-settings > .items_toggle > .switch,
+  #maintenance-settings > .items_toggle > .switch {
+    width: 80px;
+  }
+  #general-settings > .items_toggle > *,
+  #maintenance-settings > .items_toggle > * {
+    width: 50%;
+  }
+  #email-contact {
+    width: 100%;
+  }
+  #details-modal-content {
+    left: 50%;
+  }
+
+  .mobile_screen {
+    display: block;
+    position: relative;
+  }
+  #general-settings > div,
+  #maintenance-settings > div {
+    padding: 2rem 0;
+  }
+  .mobile_title {
+    display: block;
+  }
+
+  #maintenance-settings > div:nth-child(4),
+  #maintenance-settings > div:nth-child(3) {
+    flex-direction: column;
+    gap:1.5rem;
+  }
+  #maintenance-msg {
+    width: 100%;
+  }
+  .table {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #general-settings > div,
+  #maintenance-settings > div {
+    height: auto;
+  }
+  #details-modal-content {
+
+  width: 90vw;
+  }
+  .modal-maintenance-mobile{
+  display:block
 }
-.modal-content > .items > label {
-  margin-bottom: 10px;
-  font-weight: 901;
-  font-size: 1.1rem;
 }
