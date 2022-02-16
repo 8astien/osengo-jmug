@@ -1,0 +1,34 @@
+/******************************/
+/* SPECIFIC RESPONSIVE RULES */
+/****** DASHBOARD PAGE *******/
+/****************************/
+
+
+@media (max-width: 992px) {
+}
+
+@media (max-width: 768px) {
+    .tables__wrapper {
+        flex-direction: column;
+    }
+    .content__discounts {
+        flex-direction: column;
+        align-items: center;
+        min-width: 100vw;
+        max-width: 100%;
+        margin-left: 0;
+      }
+    .content__discounts > * {
+        margin-top: 1rem;
+    }
+    .discount__table >thead>tr>*, .discount__table >tbody>tr>* {
+        font-size: 12px;
+        max-width: 25vw;
+        min-width: 25vw;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 375px) {
+}
