@@ -1,74 +1,3 @@
-
-header{
-    background-color: #5784BA;
-    height: 100px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-}
-
-nav {
-    background-color: #9AC8EB;
-    position: fixed;
-    height: 100%;
-    width: 150px;
-    margin-top: 100px;
-}
-
-.logo {
-    width: 100px;
-    height: 100px;
-    margin-left: 1rem;
-}
-.header__viewstore {
-    margin: 1rem;
-    text-decoration: none;
-    color: black;
-    transition: all 100ms ease-in-out;
-}
-.navbar {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-}
-.navbar > li {
-    min-width: 100%;
-    display: flex;
-    flex-direction: column;
-    list-style: none;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 10px;
-    padding: 0.5rem;
-    transition: all 100ms ease-in-out;
-}
-
-.navbar > li > a {
-    text-decoration: none;
-    color: black;
-    transition: all 100ms ease-in-out;
-}
-
-
-
-/*************animations and effects**************/
-
-.navbar > li:hover {
-    background-color: #5784BA;
-}
-
-.navbar > li:hover a {
-    color: white;
-}
-
-.header__viewstore:hover {
-    color: white;
-}
-
 /*//////Table/////////*/
 
 table {
@@ -86,10 +15,10 @@ table {
       minmax(120px, 1fr);
       
   }
-  table a{
+table a{
       text-decoration: none;
   }
-  #title-commandes{
+.title-commandes{
     
     padding: 20px;
 }
@@ -137,17 +66,11 @@ table {
 
   /* 2eme table ////*/
 
-  .table{
-  margin-top: 30px;  
-   
-  width: 100%;
-  height: 50px;
-    
-}
+
 .table2{
-   margin-top: 50px; 
-  width: 100%;
-  height: 50px;
+  margin-top: 50px; 
+  
+  
 }
 
 ul{
@@ -192,6 +115,9 @@ ul{
 .table-head:last-child {
     border: 0;
   }
+
+  
+
 
 
   
