@@ -9,15 +9,54 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="styles/reset.css">
-    <link rel="stylesheet" href="styles/customers.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/customers.css">
+    <link rel="stylesheet" href="styles/responsive.css">
     <title>Clients JMug</title>
 </head>
 <body>
-    <header>
+    <header>  
         <img src="./assets/logo.png" alt="Logo JMug" class="logo">
         <h1>Administration JMug</h1>
+        <div>
         <a class="header__viewstore" href="#"><i class="fas fa-eye"></i>Voir boutique</a>
+        <label class="resp__navbar">
+            <input type="checkbox">
+            <span class="menu"> <span class="hamburger"></span> </span>
+            <ul class="resp__list">
+                <li>
+                    <a href="index.html">
+                        <i class="fas fa-tachometer-alt"></i>
+                        Tableau de bord
+                    </a>
+                </li>
+                <li>
+                    <a href="customers.html">
+                        <i class="fas fa-user"></i>
+                        Clients
+                    </a>
+                </li>
+                <li>
+                    <a href="orders.html">
+                        <i class="fas fa-shopping-bag"></i>
+                        Commandes
+                    </a>
+                </li>
+                <li>
+                    <a href="products.html">
+                        <i class="fas fa-dolly-flatbed"></i>
+                        Produits
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <i class="fas fa-cogs"></i>
+                        Paramètres
+                    </a>
+                </li>
+            </ul>
+            </label> 
+        </div>        
     </header>
     <nav>
         <ul class="navbar">

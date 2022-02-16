@@ -91,10 +91,6 @@ tr:nth-child(even) td {
     padding: 20px;
   }
   table {
-    display: grid;
-    border-collapse: collapse;
-    min-width: 100%;
-    margin-top: 5%;
     grid-template-columns: 
       minmax(50px, 1fr)
       minmax(100px, 1.67fr)
@@ -107,25 +103,12 @@ tr:nth-child(even) td {
      
 }
 
-@media screen and (max-width: 768x) {
-  table {
-    display: grid;
-    border-collapse: collapse;
-    min-width: 100%;
-    margin-top: 5%;
-    grid-template-columns: 
-      minmax(50px, 1fr)
-      minmax(100px, 1.67fr)
-      minmax(100px, 1.67fr)
-      minmax(100px, 1.67fr)
-      minmax(100px, 1.33fr)
-      minmax(100px, 1.67fr)
-      minmax(100px, 1.33fr);
+@media screen and (max-width: 375px) {
+  h2 {
+    margin-left: 55%;
   }
-  nav {
-    display: none;
-  }
-  main {
-    margin: 0%;
-  }
+ p {
+   margin-left: 40%;
+ }
+    
 }
