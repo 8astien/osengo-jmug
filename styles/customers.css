@@ -77,3 +77,38 @@ td {
 tr:nth-child(even) td {
   background: rgba(244, 207, 223, 0.3);
 }
+
+@media screen and (max-width:992px) {
+  h2 {
+    text-align: center;
+  }
+  .paragraph {
+    display: flex;
+    justify-content: center;
+  }
+  p{
+    width: 100%;
+    padding: 20px;
+  }
+  table {
+    grid-template-columns: 
+      minmax(50px, 1fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.33fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.33fr);
+  }
+     
+}
+
+@media screen and (max-width: 375px) {
+  h2 {
+    margin-left: 55%;
+  }
+ p {
+   margin-left: 40%;
+ }
+    
+}

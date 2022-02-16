@@ -1,20 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Rowdies:wght@300&display=swap");
 
-/* Titles */
 h1,
 h2 {
   font-weight: 400;
 }
-.title {
-  font-family: "Rowdies", cursive;
-  display: flex;
-  justify-content: space-between;
-  padding: 15px;
-  box-shadow: 0px 1px 1px #000;
-  font-weight: 100;
-}
 
-/* NavBar Paramètres gen & maintenance */
 #nav-settings {
   background-color: transparent;
   z-index: 0;
@@ -23,6 +13,7 @@ h2 {
   align-items: center;
   display: flex;
   justify-content: flex-start;
+  /* gap: 3rem; */
   margin: 1rem 0 2rem 1.2rem;
   position: static;
 }
@@ -41,6 +32,7 @@ h2 {
 #nav-settings .animation {
   position: absolute;
   height: 3rem;
+  /* top: 0; */
   z-index: 0;
   transition: all 0.5s ease 0s;
   border-radius: 8px;
@@ -66,12 +58,12 @@ h2 {
   width: 240px;
   left: 410px;
   background-color: #5784ba;
+  /* transform: translateX(-5px); */
 }
 #nav-settings a:hover {
   transition: all 0.5s ease;
   color: #fff;
 }
-/* Modal  */
 #details-modal-title {
   background-color: #5784ba;
   border: none;
@@ -92,82 +84,36 @@ h2 {
   opacity: 0.9;
   transform: translateY(3px);
 }
-#modal-help[type="checkbox"] {
-  display: none;
-}
-
-#details-modal-content {
-  position: fixed;
-  width: 50vw;
-  height: 50vh;
-  background: #fff;
-  color: #000;
-  top: 40%;
-  left: calc(50% + 75px);
-  display: none;
-  transform: translate(-50%, -50%);
-  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
-}
-
-#details-modal-content > div:nth-child(1) {
+.title {
+  font-family: "Rowdies", cursive;
   display: flex;
   justify-content: space-between;
-  transform: translateY(-12px);
+  padding: 15px;
+  box-shadow: 0px 1px 1px #000;
+  font-weight: 100;
 }
-#modal-help:checked + div + #details-modal-content {
-  display: flex;
-  z-index: 100;
-  padding: 2rem;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.modal-content {
-  height: 100%;
-  justify-content: space-evenly;
-  display: flex;
-  overflow-y: auto;
-  flex-wrap: wrap;
-}
-#modal-help h2 {
-  margin-left: auto;
-}
-
-#modal-help:checked + div + #details-modal-content + .close_modal {
-  display: block;
-}
-
-.modal-content > .items {
-  padding: 1rem;
-  display: flex;
-  flex-flow: column;
-}
-.modal-content > .items > label {
-  margin-bottom: 10px;
-  font-weight: 901;
-  font-size: 1.1rem;
-}
-.close_modal {
-  cursor: pointer;
-  z-index: 100;
-}
-/* Main */
 #general-settings,
 #maintenance-settings {
   display: flex;
   flex-direction: column;
   padding: 0 24vw;
-  height: 75vh;
+  gap: 5rem;
+  margin: 8rem auto;
 }
-/* Main items */
-#general-settings > div,
+#maintenance-settings {
+  height: auto;
+}
+
+#general-settings > div {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 #maintenance-settings > div {
   height: 100%;
   display: flex;
   justify-content: space-between;
-}
-#general-settings > div {
-  align-items: center;
 }
 #maintenance-settings > div:first-child {
   align-items: center;
@@ -179,8 +125,6 @@ h2 {
   display: flex;
   gap: 20px;
 }
-/* Switch toggle */
-
 .switch {
   --width: 80px;
   --height: calc(var(--width) / 3);
@@ -263,29 +207,130 @@ h2 {
   color: #fff;
 }
 
+#modal-help[type="checkbox"] {
+  display: none;
+}
+
+#details-modal-content {
+  position: fixed;
+  width: 50vw;
+  height: 50vh;
+  background: #fff;
+  color: #000;
+  top: 40%;
+  left: calc(50% + 75px);
+  display: none;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+  /* max-width: 70vw;
+  max-height: 150vh; */
+}
+
+.close_modal {
+  cursor: pointer;
+  z-index: 100;
+}
+#details-modal-content > div:nth-child(1) {
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-12px);
+}
+#modal-help:checked + div + #details-modal-content {
+  display: flex;
+  z-index: 100;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal-content {
+  height: 100%;
+  justify-content: space-evenly;
+  display: flex;
+  overflow-y: auto;
+  flex-wrap: wrap;
+}
+#modal-help h2 {
+  margin-left: auto;
+}
+
+#modal-help:checked + div + #details-modal-content + .close_modal {
+  display: block;
+}
+
+.modal-content > .items {
+  padding: 1rem;
+  display: flex;
+  flex-flow: column;
+}
+.modal-content > .items > label {
+  margin-bottom: 10px;
+  font-weight: 901;
+  font-size: 1.1rem;
+}
+
 .mobile_screen {
   display: none;
 }
 .mobile_title {
   display: none;
 }
-.modal-maintenance-mobile{
-  display:none
+.modal-maintenance-mobile {
+  display: none;
 }
 
+
 /* Media  */
-@media only screen and (max-width: 1300px) and (min-width: 992px) {
+@media only screen and (min-width: 1200px) and (max-width: 1600px) {
+  .table {
+    width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
   #general-settings,
   #maintenance-settings {
     padding: 0px 12vw;
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 1200px) and (min-width: 992px) {
+  #general-settings,
+  #maintenance-settings {
+    padding: 0px 12vw;
+    gap: 3rem;
+  }
+
+  #nav-settings > a:nth-child(2) {
+    width: 230px;
+    padding-left: 2rem;
+  }
+
+  #nav-settings .start-settings,
+  #nav-settings > a:nth-child(1):hover ~ .animation {
+    width: 240px;
+    left: 1.1rem;
+    background-color: #9ac8eb;
+    color: #fff;
+    transform: translateX(-5px);
+  }
+  #nav-settings .start-maintenance,
+  #nav-settings > a:nth-child(2):hover ~ .animation {
+    width: 240px;
+    left: calc(1.1rem + 250px);
+    background-color: #5784ba;
+    /* transform: translateX(-5px); */
+  }
+  #maintenance-settings > div {
+    height: auto;
+  }
+   #details-modal-content {
+    left: 50%;
+    width: 80vw;
   }
 }
 
 @media only screen and (min-width: 572px) and (max-width: 991px) {
-  header {
-    top: 0;
-    position: fixed;
-  }
   #general-settings,
   #maintenance-settings {
     margin-top: 12vh;
@@ -295,13 +340,7 @@ h2 {
     z-index: -1;
     padding: 0px 8vw;
   }
-  body > nav:nth-child(2) {
-    display: none;
-  }
-  main {
-    padding: 0;
-    margin: 0;
-  }
+
   .title {
     position: fixed;
     top: 100px;
@@ -315,20 +354,11 @@ h2 {
   #nav-settings {
     position: fixed;
     width: 100%;
-    top: 17.7vh;
+    top: 11.7vh;
     margin: 0;
-    justify-content: space-around;
+    justify-content: flex-start;
   }
-  #nav-settings .start-settings,
-  #nav-settings > a:nth-child(1):hover ~ .animation {
-    left: 2.3rem;
-    transform: translateX(0);
-    background-color: #5784ba;
-  }
-  #nav-settings .start-maintenance,
-  #nav-settings > a:nth-child(2):hover ~ .animation {
-    left: 21.1rem;
-  }
+
   #nav-settings .start-maintenance,
   #nav-settings > a:nth-child(2) {
     padding-left: 0;
@@ -346,12 +376,32 @@ h2 {
   #maintenance-settings > .items_toggle > * {
     width: 50%;
   }
+  #maintenance-settings > div {
+    height: auto;
+  }
+  #maintenance-settings {
+    gap: 3rem;
+  }
   #email-contact {
     width: 100%;
   }
   #nav-settings a {
     z-index: 1;
-    transform: translateX(4px);
+  }
+  #nav-settings .start-settings,
+  #nav-settings > a:nth-child(1):hover ~ .animation {
+    left: 2rem;
+    background-color: #5784ba;
+  }
+  #nav-settings .start-maintenance,
+  #nav-settings > a:nth-child(2):hover ~ .animation {
+    left: 20rem;
+  }
+  #nav-settings a:nth-child(1) {
+    left: 2rem;
+  }
+  #nav-settings a:nth-child(2) {
+    left: 6rem;
   }
   #nav-settings .animation {
     border-radius: 0 0 8px 8px;
@@ -359,9 +409,16 @@ h2 {
   }
   #details-modal-content {
     left: 50%;
+    width: 80vw;
   }
   .table {
     width: 45%;
+  }
+  .table {
+    width: 65%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
@@ -372,11 +429,13 @@ h2 {
   }
   #general-settings,
   #maintenance-settings {
-    margin-top: 12vh;
     position: relative;
     width: 100%;
     z-index: -1;
     padding: 0px 5vw;
+    /*     top: 20vh;
+ */
+    gap: 0;
   }
   #general-settings {
     top: 100px;
@@ -438,7 +497,7 @@ h2 {
   #maintenance-settings > div:nth-child(4),
   #maintenance-settings > div:nth-child(3) {
     flex-direction: column;
-    gap:1.5rem;
+    gap: 1.5rem;
   }
   #maintenance-msg {
     width: 100%;
@@ -454,10 +513,9 @@ h2 {
     height: auto;
   }
   #details-modal-content {
-
-  width: 90vw;
+    width: 90vw;
   }
-  .modal-maintenance-mobile{
-  display:block
-}
+  .modal-maintenance-mobile {
+    display: block;
+  }
 }
