@@ -109,13 +109,27 @@ table a{
 
   /****** Responsive ********/
 
+  @media screen and (max-width: 1200px){
+    .icon{
+      visibility: hidden;
+    }
+    .icon{
+      display: none;
+    }
+  }
+
+
+
+
   @media screen and (max-width: 992px){
     
     .acces-directs{
       min-width: 100%;
     }
 
-
+    .icon{
+      font-size: 32px;
+    }
 
     .list-acces{
       display: flex;
@@ -138,7 +152,7 @@ table a{
 
     }
     
-
+    
 
 
   }
@@ -146,4 +160,18 @@ table a{
   
 @media screen and (max-width: 375px){
   
-  
+  .list-acces li{
+    font-size: 10px;
+
+  }
+
+  h5{
+    text-indent: -999px;
+  }
+  h5{
+    font: 0/0 a;
+    text-shadow: transparent;
+    color: transparent;
+    text-decoration: none;
+  }
+}  
