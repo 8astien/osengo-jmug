@@ -1,8 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 header{
     background-color: #5784BA;
     height: 100px;
@@ -92,6 +88,9 @@ table {
       minmax(120px, 1fr)
       minmax(120px, 1fr);
   }
+  table a{
+      text-decoration: none;
+  }
 
   thead,
   tbody,
@@ -137,14 +136,14 @@ table {
   /* 2eme table ////*/
 
   .table{
-  margin-top: 150px;  
+  margin-top: 30px;  
    
   width: 100%;
   height: 50px;
     
 }
 .table2{
-    margin-top: 150px; 
+   margin-top: 50px; 
   width: 100%;
   height: 50px;
 }
