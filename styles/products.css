@@ -101,3 +101,21 @@ table {
     height: 100%;
     
   }
+   
+
+  @media screen and (max-width:1400px) {
+
+    table {
+    grid-template-columns: 
+    minmax(50px, 1fr)
+    minmax(50px, 1.67fr)
+    minmax(50px, 1.67fr)
+    minmax(50px, 1.67fr)
+    minmax(50px, 3.33fr)
+    minmax(50px, 1.67fr)
+    minmax(50px, 3.33fr)
+    minmax(50px, 1.67fr);
+    }
+  }
+       
+  
