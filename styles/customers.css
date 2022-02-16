@@ -77,3 +77,55 @@ td {
 tr:nth-child(even) td {
   background: rgba(244, 207, 223, 0.3);
 }
+
+@media screen and (max-width:992px) {
+  h2 {
+    text-align: center;
+  }
+  .paragraph {
+    display: flex;
+    justify-content: center;
+  }
+  p{
+    width: 100%;
+    padding: 20px;
+  }
+  table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    margin-top: 5%;
+    grid-template-columns: 
+      minmax(50px, 1fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.33fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.33fr);
+  }
+     
+}
+
+@media screen and (max-width: 768x) {
+  table {
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    margin-top: 5%;
+    grid-template-columns: 
+      minmax(50px, 1fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.33fr)
+      minmax(100px, 1.67fr)
+      minmax(100px, 1.33fr);
+  }
+  nav {
+    display: none;
+  }
+  main {
+    margin: 0%;
+  }
+}
