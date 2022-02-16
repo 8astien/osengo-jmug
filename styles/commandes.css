@@ -17,10 +17,7 @@ nav {
     width: 150px;
     margin-top: 100px;
 }
-main {
-    margin-left: 150px;
-    padding-top: 100px;
-}
+
 .logo {
     width: 100px;
     height: 100px;
@@ -87,7 +84,15 @@ table {
       minmax(120px, 1fr)
       minmax(120px, 1fr)
       minmax(120px, 1fr);
+      
   }
+  table a{
+      text-decoration: none;
+  }
+  #title-commandes{
+    
+    padding: 20px;
+}
 
   thead,
   tbody,
