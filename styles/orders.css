@@ -40,70 +40,43 @@
 }
 
 /********* table ***********/
-
-table {
-    display: grid;
-    border-collapse: collapse;
-    min-width: 100%;
-    grid-template-columns: 
-      minmax(70px, 1fr)
-      minmax(60px, 1fr)
-      minmax(120px, 1fr)
-      minmax(120px, 1fr)
-      minmax(120px, 1fr)
-      minmax(120px, 1fr)
-      minmax(120px, 1fr)
-      minmax(120px, 1fr);
-     
-      
-}
-table a{
-    text-decoration: none;
-}
 .title-commandes{
     
-    padding: 20px;
+  padding: 20px;
 }
-  thead,
-  tbody,
-  tr {
-    display: contents;
-  }
+table{
+  display: block;
+  border-collapse: collapse;
+  width: 100%;
+ 
+}
+th{
+  background:#5784BA ;
+  color: white;
+  
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+tr:nth-child(even) td {
+  background: rgba(244, 207, 223, 0.3);
+}
+td{
+  padding-top: 15px;
+  padding-bottom: 10px;
+  color: #808080;
+}
 
-  th,
-  td {
-    padding: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-  }
-  th {
-    position: sticky;
-    top: 0;
-    background: #5784BA;
-    text-align: left;
-    font-weight: normal;
-    font-size: 1.1rem;
-    color: white;
-  }
-  
-  th:last-child {
-    border: 0;
-  }
-  
-  td {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #808080;
-  }
-  
-  tr:nth-child(even) td {
-    background: rgba(244, 207, 223, 0.3);
-  }
 
-  .box-number{
+td, th{
+  padding: 15px 10px;
+  
+}
+table a{
+  text-decoration: none;
+}
+.box-number{
       width: 3rem;
-  }
+}  
 
 
 
@@ -113,8 +86,7 @@ table a{
 
 
 
-
-  @media screen and (max-width: 992px){
+@media screen and (max-width: 992px){
     
     .acces-directs{
       min-width: 100%;
@@ -131,16 +103,17 @@ table a{
 
     }
     
+    
 
 
 
-  }
+}
 
-  @media screen and (max-width: 768px){
-    .acces-directs{
+@media screen and (max-width: 768px){
+  .acces-directs{
       min-width: 100%;
     }
-    .list-acces{
+  .list-acces{
       display: flex;
       justify-content: space-around;
       white-space: nowrap;
@@ -148,13 +121,46 @@ table a{
   }
   .list-acces li{
     font-size: 10px;
+  }
 
-  
-    
-
+  /******** Table ********/
+ table{
+    width: 100%;
+    font-size: .9em;
+  } 
+  #table-inside tbody{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 
   }
-}
+  table tr{
+    display: grid;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+
+  table td[data-title]{
+    display: flex;
+
+  }
+  table td[data-title]::before{
+    content: attr(data-title);
+    width: 100px;
+    
+    font-weight: bold;
+    height: 100%;
+  }
+
+  table thead{
+    display: none;
+  }
+ 
+}     
+      
+
+
 @media screen and (max-width: 524px){
  .list-acces{
    display: flex;
@@ -179,7 +185,9 @@ table a{
   
 @media screen and (max-width: 375px){
   
-  
+ #icon{
+   font-size: 1.3rem;
+  } 
 
   .text-inside{
     text-indent: -999px;
@@ -190,4 +198,41 @@ table a{
     color: transparent;
     text-decoration: none;
   }
-}  
+  
+
+  /******** table ******/
+  #table-inside tbody{
+    display: flex;
+    flex-direction: column;
+
+
+  }
+  table{
+    min-width: 100%;
+    font-size: .9em;
+  }
+  
+  
+  tr{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    padding: 1em;
+    margin-bottom: 1em;
+  }
+  td[data-title]{
+    display: flex;
+
+  }
+  td[data-title]::before{
+    content: attr(data-title);
+    width: 100px;
+    
+    font-weight: bold;
+  }
+
+  thead{
+    display: none;
+  }
+
+}
