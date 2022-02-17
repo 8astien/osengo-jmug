@@ -110,5 +110,8 @@ tr:nth-child(even) td {
  p {
    margin-left: 40%;
  }
-    
+ div {
+   overflow: hidden;
+ }
+ 
 }
