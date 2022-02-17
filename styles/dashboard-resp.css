@@ -3,10 +3,6 @@
 /****** DASHBOARD PAGE *******/
 /****************************/
 
-
-@media (max-width: 992px) {
-}
-
 @media (max-width: 768px) {
     .tables__wrapper {
         flex-direction: column;
@@ -30,5 +26,3 @@
     }
 }
 
-@media (max-width: 375px) {
-}
