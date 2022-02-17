@@ -109,14 +109,7 @@ table a{
 
   /****** Responsive ********/
 
-  @media screen and (max-width: 1200px){
-    .icon{
-      visibility: hidden;
-    }
-    .icon{
-      display: none;
-    }
-  }
+ 
 
 
 
@@ -127,9 +120,7 @@ table a{
       min-width: 100%;
     }
 
-    .icon{
-      font-size: 32px;
-    }
+   
 
     .list-acces{
       display: flex;
@@ -146,29 +137,54 @@ table a{
   }
 
   @media screen and (max-width: 768px){
-    
-    .list-acces li{
-      font-size: 11px;
-
+    .acces-directs{
+      min-width: 100%;
     }
+    .list-acces{
+      display: flex;
+      justify-content: space-around;
+      white-space: nowrap;
     
-    
-
-
   }
-
-  
-@media screen and (max-width: 375px){
-  
   .list-acces li{
     font-size: 10px;
 
-  }
+  
+    
 
-  h5{
+
+  }
+}
+@media screen and (max-width: 524px){
+ .list-acces{
+   display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+ }
+  
+  #icon{
+    font-size: 1rem;
+  }
+  .text-inside{
     text-indent: -999px;
   }
-  h5{
+  .text-inside{
+    font: 0/0 a;
+    text-shadow: transparent;
+    color: transparent;
+    text-decoration: none;
+  }
+}
+  
+@media screen and (max-width: 375px){
+  
+  
+
+  .text-inside{
+    text-indent: -999px;
+  }
+  .text-inside{
     font: 0/0 a;
     text-shadow: transparent;
     color: transparent;

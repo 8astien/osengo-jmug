@@ -101,21 +101,27 @@ table {
     height: 100%;
     
   }
+ 
    
 
   @media screen and (max-width:1400px) {
 
-    table {
+     table { 
     grid-template-columns: 
-    minmax(50px, 1fr)
-    minmax(50px, 1.67fr)
-    minmax(50px, 1.67fr)
-    minmax(50px, 1.67fr)
-    minmax(50px, 3.33fr)
-    minmax(50px, 1.67fr)
-    minmax(50px, 3.33fr)
-    minmax(50px, 1.67fr);
+    minmax(75px, 1fr)
+    minmax(75px, 1.67fr)
+    minmax(75px, 1.67fr)
+    minmax(100px, 1.67fr)
+    minmax(100px, 3.33fr)
+    minmax(75px, 1.67fr)
+    minmax(60px, 3.33fr)
+    minmax(75px, 1.67fr);
     }
   }
-       
-  
+   
+  @media screen and (max-width:600px) {
+   
+  .overflow {
+    overflow-x: auto;
+  }
+}
