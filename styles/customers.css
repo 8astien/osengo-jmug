@@ -103,15 +103,27 @@ tr:nth-child(even) td {
      
 }
 
-@media screen and (max-width: 375px) {
-  h2 {
-    margin-left: 55%;
-  }
- p {
-   margin-left: 40%;
- }
- div {
-   overflow: hidden;
- }
- 
+@media screen and (max-width: 768px) and (max-width: 375px) {
+  .table-container {
+    overflow-x: auto;
+}
+
+.container-title {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+.container-tile > h2 {
+    margin-left: 0;
+}
+.paragraph{
+    display: block;
+}
+.paragraph article > p {
+    margin:0;
+}
+.paragraph article {
+    text-align: center;
+}
+
 }

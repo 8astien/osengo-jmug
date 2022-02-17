@@ -1,0 +1,17 @@
+:root {
+    --shadow-color: 0deg 0% 60%;
+}
+
+table {
+    display: flex;
+
+}
+
+
+tr {
+    display: flex;
+}
+
+th {
+    display: flex;
+}
