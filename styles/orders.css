@@ -154,9 +154,14 @@ table a{
 
 
   }
-
+}
 @media screen and (max-width: 524px){
- 
+ .list-acces{
+   display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+ }
   
   #icon{
     font-size: 1rem;
