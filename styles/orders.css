@@ -40,6 +40,9 @@
 }
 
 /********* table ***********/
+.table-conatiner{
+  padding: 20px;
+}
 .title-commandes{
     
   padding: 20px;
@@ -48,12 +51,14 @@ table{
   width: 100%;
   border-collapse: collapse;
 }
+
 th{
   background:#5784BA ;
   color: white;
   
   font-weight: normal;
   font-size: 1.1rem;
+  
 }
 tr:nth-child(even) td {
   background: rgba(244, 207, 223, 0.3);
@@ -62,6 +67,7 @@ td{
   padding-top: 15px;
   padding-bottom: 10px;
   color: #808080;
+  text-align: center;
 }
 
 
