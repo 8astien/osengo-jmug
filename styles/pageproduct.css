@@ -108,3 +108,15 @@
   justify-content: end;
   margin: 1rem;
 }
+
+@media screen and (max-width:500px) {
+  #searchbar {
+    width: 65%;
+  }
+  .bottom {
+    flex-direction: column;
+}
+.bottom >* {
+  margin-top: 30px;
+}
+}
