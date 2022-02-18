@@ -42,7 +42,8 @@
 }
 
 h2 {
-    margin-left: 38%;
+    text-align: center;
+    margin-right: 200px;
 }
 
 table {
@@ -62,6 +63,12 @@ thead > tr {
 
 tbody {
     margin-left: 5%;
+}
+
+@media screen and (max-width: 1200px) {
+    h2 {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 992px) {
