@@ -120,3 +120,11 @@
   margin-top: 30px;
 }
 }
+
+
+@media screen and (max-width:800px) {
+  .pictures {
+    flex-direction: column;
+    width:400px ;
+  }
+}
