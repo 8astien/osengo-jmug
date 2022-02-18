@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <img src="./assets/logo.png" alt="Logo JMug" class="logo">
+        <img src="./assets/j-mug-logo.svg" alt="Logo JMug" class="logo">
         <h1>Administration JMug</h1>
         <div>
             <a class="header__viewstore" href="#"><i class="fas fa-eye"></i>Voir boutique</a>
@@ -120,10 +120,10 @@
 
             </ul>
         </div>
-        <div>
+        <div class="table-conatiner">
             <h1 class="title-commandes">Commandes</h1>
 
-            <table>
+            <table id="table-inside">
                 <thead>
                     <tr>
                         <th>ID</th>
@@ -132,60 +132,60 @@
                         <th>Date d'envoi</th>
                         <th>Ref. Item</th>
                         <th>Prix HT</th>
-                        <th>Etat</th>
+                        <th>État</th>
                         <th>Commentaire</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>2506</td>
-                        <td><input type="number" class="box-number" placeholder="8"></td>
-                        <td>05/02/2022</td>
-                        <td>07/02/2022</td>
-                        <td><a href="./pageproduct.html">La tasse P</a></td>
-                        <td>368.00£</td>
-                        <td>Livré</td>
-                        <td>none</td>
+                        <td data-title="Id">0089</td>
+                        <td data-title="Qantité"><input type="number" class="box-number" placeholder="8"></td>
+                        <td data-title="Date Commande">05/02/2022</td>
+                        <td data-title="Date d'envoi">07/02/2022</td>
+                        <td data-title="Reference"><a href="./pageproduct.html">La tasse P</a></td>
+                        <td data-title="Prix HT">368.00£</td>
+                        <td data-title="État">Livré</td>
+                        <td data-title="Commentaire">none</td>
                     </tr>
                     <tr>
-                        <td>2006</td>
-                        <td><input type="number" class="box-number" placeholder="14"></td>
-                        <td>17/01/2022</td>
-                        <td>18/01/2022</td>
-                        <td><a href="./pageproduct.html">La tasse P</a></td>
-                        <td>644.00£</td>
-                        <td>Livré</td>
-                        <td>none</td>
+                        <td data-title="Id" >2006</td>
+                        <td data-title="Qantité"><input type="number" class="box-number" placeholder="14"></td>
+                        <td data-title="Date Commande">17/01/2022</td>
+                        <td data-title="Date d'envoi">18/01/2022</td>
+                        <td data-title="Reference"><a href="./pageproduct.html">La tasse P</a></td>
+                        <td data-title="Prix">644.00£</td>
+                        <td data-title="État">Livré</td>
+                        <td data-title="Commentaire">none</td>
                     </tr>
                     <tr>
-                        <td>1564</td>
-                        <td><input type="number" class="box-number" placeholder="7"></td>
-                        <td>10/01/2022</td>
-                        <td>11/01/2022</td>
-                        <td><a href="./pageproduct.html">La tasse P</a></td>
-                        <td>322.00£</td>
-                        <td>Livré</td>
-                        <td>none</td>
+                        <td data-title="Id">1564</td>
+                        <td data-title="Qantité"><input type="number" class="box-number" placeholder="7"></td>
+                        <td data-title="Date Commande">10/01/2022</td>
+                        <td data-title="Date d'envoi">11/01/2022</td>
+                        <td data-title="Reference"><a href="./pageproduct.html">La tasse P</a></td>
+                        <td data-title="Prix">322.00£</td>
+                        <td data-title="État">Livré</td>
+                        <td data-title="Commentaire">none</td>
                     </tr>
                     <tr>
-                        <td>1485</td>
-                        <td><input type="number" class="box-number" placeholder="1"></td>
-                        <td>05/01/2022</td>
-                        <td>07/01/2022</td>
-                        <td><a href="./pageproduct.html">La tasse P</a></td>
-                        <td>46.00£</td>
-                        <td>Livré</td>
-                        <td>none</td>
+                        <td data-title="Id">1485</td>
+                        <td data-title="Qantité"><input type="number" class="box-number" placeholder="1"></td>
+                        <td data-title="Date Commande">05/01/2022</td>
+                        <td data-title="Date d'envoi">07/01/2022</td>
+                        <td data-title="Reference"><a href="./pageproduct.html">La tasse P</a></td>
+                        <td data-title="Prix">46.00£</td>
+                        <td data-title="État">Livré</td>
+                        <td data-title="Commentaire">none</td>
                     </tr>
                     <tr>
-                        <td>1456</td>
-                        <td><input type="number" class="box-number" placeholder="22"></td>
-                        <td>03/01/2022</td>
-                        <td>04/01/2022</td>
-                        <td><a href="./pageproduct.html">La tasse P</a></td>
-                        <td>1102.00£</td>
-                        <td>Livré</td>
-                        <td>none</td>
+                        <td data-title="Id">1456</td>
+                        <td data-title="Qantité"><input type="number" class="box-number" placeholder="22"></td>
+                        <td data-title="Date Commande">03/01/2022</td>
+                        <td data-title="Date d'envoi">04/01/2022</td>
+                        <td data-title="Reference"><a href="./pageproduct.html">La tasse P</a></td>
+                        <td data-title="Prix">1102.00£</td>
+                        <td data-title="État"> Livré</td>
+                        <td data-title="Commentaire">none</td>
                     </tr>
 
                 </tbody>
