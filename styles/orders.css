@@ -1,5 +1,5 @@
 
-/*********** List Acces***********/
+/*********** List Acces yellow-box ***********/
 
 .acces-directs{
     
@@ -38,8 +38,9 @@
     color: #f4cfdf85;
 
 }
-
-/********* table ***********/
+  /***********************************************/
+  /******** Table desktop ********************************/
+  /***********************************************/
 .table-conatiner{
   padding: 20px;
 }
@@ -83,8 +84,9 @@ table a{
 }  
 
 
-
-  /****** Responsive ********/
+  /***********************************************/
+  /******** Respnsives ********************************/
+  /***********************************************/
 
  
 
@@ -126,8 +128,9 @@ table a{
   .list-acces li{
     font-size: 10px;
   }
-
-  /******** Table ********/
+  /***********************************************/
+  /******** Table max-width 768px ********************************/
+  /***********************************************/
  table{
     width: 100%;
     font-size: .9em;
@@ -163,7 +166,7 @@ table a{
  
 }     
       
-
+/***** Brake point Yellow-box ****/
 
 @media screen and (max-width: 524px){
  .list-acces{
@@ -176,12 +179,18 @@ table a{
   #icon{
     font-size: 1rem;
   }
+  #icon-flatbed{
+    font-size: 1rem;
+   }
+   #icon-cart{
+    font-size: 1rem;
+   }
   .text-inside{
     text-indent: -999px;
   }
   .text-inside{
     font: 0/0 a;
-    text-shadow: transparent;
+    
     color: transparent;
     text-decoration: none;
   }
@@ -192,19 +201,26 @@ table a{
  #icon{
    font-size: 1.3rem;
   } 
+ #icon-flatbed{
+  font-size: 1.3rem;
+ }
+ #icon-cart{
+  font-size: 1.3rem;
+ }
 
   .text-inside{
     text-indent: -999px;
   }
   .text-inside{
     font: 0/0 a;
-    text-shadow: transparent;
+    
     color: transparent;
     text-decoration: none;
   }
   
-
-  /******** table ******/
+  /***********************************************/
+  /******** Table max-width 375px ********************************/
+  /***********************************************/
   #table-inside tbody{
     display: flex;
     flex-direction: column;
