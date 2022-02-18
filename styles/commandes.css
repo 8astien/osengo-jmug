@@ -105,7 +105,7 @@ table a{
     width: 100%;
     font-size: .9em;
   } 
-  #table-inside tbody{
+  .table-inside tbody{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
@@ -137,7 +137,7 @@ table a{
 }
 
 @media screen and (max-width: 375px){
-  #table-inside tbody{
+  .table-inside tbody{
     display: flex;
     flex-direction: column;
 
